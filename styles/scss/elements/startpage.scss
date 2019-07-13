@@ -1,3 +1,8 @@
+#startpage-widgets {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
 .startpage-widget {
     background-color: $darkC1;
     border-radius: 4px;
@@ -8,7 +13,7 @@
 
 .startpage-widget>.title {
     background-color: $darkC3;
-    padding: 5px;
+    padding: 10px;
 }
 
 .startpage-widget>.title>.description {
