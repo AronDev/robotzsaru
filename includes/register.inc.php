@@ -1,7 +1,7 @@
 <?php
 session_start();
 require("connect.inc.php");
-
+echo $_POST["badgeNum"];
 echo $_POST["playerName"];
 
 $badgeNum = mysqli_real_escape_string($mysql_id, $_POST["badgeNum"]);
