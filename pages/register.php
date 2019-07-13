@@ -43,7 +43,7 @@
                             if(password === password2) {
                                 $.ajax({
                                     type: 'POST',
-                                    url: 'includes/register.inc.php',
+                                    url: '../includes/register.inc.php',
                                     data: { badgeNum : badgeNum, password : password },
                                     success: function(response) {
                                         if(response == "index")
