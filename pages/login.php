@@ -11,6 +11,7 @@
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
             <button id="loginButton">Belépés</button><br /><br />
+            <div id='loginInfo'>&nbsp</div>
         </div>
     </body>
     <script>
@@ -19,21 +20,29 @@
             var badgeNum = $('#badgeNum').val();
             var password = $('#password').val();
 
+            var loginInfo = $('#loginInfo');
+
             if($.trim(badgeNum) !== '') {
                 if($.trim(password) !== '') {
                     $.ajax({
                         type: 'POST',
                         url: 'includes/login.inc.php',
                         data: { badgeNum : badgeNum, password : password },
+                        success: function(response) {
+                            if(response == "reload")
+                                location.reload();
+                            else
+                                loginInfo.html(response);
+                        },
                         error: function (response) {
                             console.log(response);
                         }
                     });
                 } else {
-                    $('#login-box').append("<div id='loginInfo'>Hiányos jelszó!</div>");
+                    loginInfo.html('Hiányos jelszó!');
                 }
             } else {
-                $('#login-box').append("<div id='loginInfo'>Hiányos jelvényszám!</div>");
+                loginInfo.html('Hiányos jelvényszám!');
             }
         });
     </script>

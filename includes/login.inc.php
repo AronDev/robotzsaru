@@ -7,18 +7,24 @@ $password = mysqli_real_escape_string($mysql_id, $_POST["password"]);
 
 $pwHash = hash('sha512', $password);
 
-$result = mysqli_query($mysql_id, "SELECT * FROM users WHERE (BINARY badge_number='" . $badgeNum . "') AND password='" . $pwHash . "'");
-$count = mysqli_num_rows($result);
-$rows = mysqli_fetch_assoc($result);
+if($result = mysqli_query($mysql_id, "SELECT * FROM users WHERE (BINARY badge_number='" . $badgeNum . "') AND password='" . $pwHash . "'")) {
+    $row = mysqli_fetch_assoc($result);
 
-if($count == 1) { // Ha létezik az adott jelvényszámmal felhasználó és a jelszó megegyező
-    // Adatok betöltése
-    $_SESSION['logged'] = true;
-    $_SESSION['badge_number'] = $badgeNum;
+    if(mysqli_num_rows($result) == 1) { // Ha létezik az adott jelvényszámmal felhasználó és a jelszó megegyező
+        if($row['active'] == 1) {
+            // Adatok betöltése
+            $_SESSION['logged'] = true;
+            $_SESSION['badge_number'] = $badgeNum;
 
-    header("Refresh: 0, url=../index.php");
+            echo("reload");
+        } else {
+            echo "A felhasználó nincs aktiválva!";
+        }
+    } else {
+        echo "Hibás adatok!";
+    }
 } else {
-    echo "<span id='loginInfo'>Hibás adatok!</span>";
+    echo "Hiba történt!";
 }
 
 unset($_POST);
