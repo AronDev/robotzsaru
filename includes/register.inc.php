@@ -10,7 +10,7 @@ $pwHash = hash('sha512', $password); // Bevitt jelszó dekódolása SHA512-vel
 
 if($result = mysqli_query($mysql_id, "SELECT badge_number FROM users WHERE badge_number='" . $badgeNum . "'")) {
     if(mysqli_num_rows($result) == 0) {
-        $query = "INSERT INTO users ('badge_number', 'playername', 'password') VALUES ('" . $badgeNum . "', '" . $playerName . "', '" . $pwHash . "')";
+        $query = "INSERT INTO users (`badge_number`, `playername`, `password`) VALUES ('" . $badgeNum . "', '" . $playerName . "', '" . $pwHash . "')";
 
         if(mysqli_query($mysql_id, $query)) {
             echo "Felhasználód létrehozva!\n Várj türelemmel míg elfogadják azt!";
