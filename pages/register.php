@@ -20,7 +20,7 @@
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="text" id="playerName" placeholder="Név"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
-            <input type="password" id="password2" placeholder="Jelszó mégegyszer"><br /><br />
+            <input type="password" id="password2" placeholder="Jelszó újra"><br /><br />
             <button id="registerButton"><i class='fas fa-user-plus login-icon'></i>Regisztrálás</button><br /><br />
             <button onclick="window.location.href = '../index.php';"><i class='fas fa-angle-left login-icon'></i>Vissza</button><br /><br />
             <div id='registerInfo'>&nbsp</div><br />
@@ -39,24 +39,26 @@
             if($.trim(badgeNum) !== '') {
                 if(!isNaN(badgeNum)) {
                     if($.trim(playerName) !== '') {
-                        if($.trim(password) !== '' || $.trim(password2) !== '') {
-                            if(password === password2) {
-                                $.ajax({
-                                    type: 'POST',
-                                    url: '../includes/register.inc.php',
-                                    data: { badgeNum : badgeNum, password : password },
-                                    success: function(response) {
-                                        if(response == "index")
-                                            window.location.href = '../index.php';
-                                        else
-                                            registerInfo.html(response);
-                                    },
-                                    error: function (response) {
-                                        console.log(response);
-                                    }
-                                });
-                            } else egisterInfo.html('A két jelszó nem megegyező!');
-                        } else registerInfo.html('Hiányos jelszó!');
+                        if(playerName.indexOf('_') !== -1) {
+                            if($.trim(password) !== '' || $.trim(password2) !== '') {
+                                if(password === password2) {
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: '../includes/register.inc.php',
+                                        data: { badgeNum : badgeNum, password : password },
+                                        success: function(response) {
+                                            if(response == "index")
+                                                window.location.href = '../index.php';
+                                            else
+                                                registerInfo.html(response);
+                                        },
+                                        error: function (response) {
+                                            console.log(response);
+                                        }
+                                    });
+                                } else egisterInfo.html('A két jelszó nem megegyező!');
+                            } else registerInfo.html('Hiányos jelszó!');
+                        } else registerInfo.html('A névnek tartalmaznia kell alsóvonalat!');
                     } else registerInfo.html('Hiányos név!');
                 } else registerInfo.html('Hibás jelvényszám!');
             } else registerInfo.html('Hiányos jelvényszám!');
