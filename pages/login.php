@@ -10,7 +10,8 @@
             <h4>Belépés</h4><br />
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
-            <button id="loginButton">Belépés</button>
+            <button id="loginButton">Belépés</button><br /><br />
+            <div id="loginInfo">&nbsp</div>
         </div>
     </body>
     <script>
@@ -28,27 +29,16 @@
                         error: function (response) {
                             console.log(response);
                         }
-
                     });
                 } else {
-                    swal({
-                    title: 'Hiányos mező',
-                    type: 'error',
-                    html: `A <b>jelszó</b> mező üresen maradt!`,
-                    confirmButtonText: 'Oké',
-                    })
+                    document.getElementById('loginInfo').innerHTML = 'Hiányos jelszó!';
                 }
             } else {
-                swal({
-                title: 'Hiányos mező',
-                type: 'error',
-                html: `A <b>jelvényszám</b> mező üresen maradt!`,
-                confirmButtonText: 'Oké',
-                })
+                document.getElementById('loginInfo').innerHTML = 'Hiányos jelvényszám!';
             }
         });
     </script>
 </html>
 <?php
-
+//
 ?>

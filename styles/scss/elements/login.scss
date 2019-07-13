@@ -28,8 +28,13 @@ button {
     cursor: pointer;
     width: 50%;
     text-align: center;
+    @include uncopiable;
     transition: 300ms all;
     &:hover {
         background-color: rgba($gray-color, .1);
     }
+}
+
+#loginInfo {
+    color: $red-color;
 }
