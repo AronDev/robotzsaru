@@ -13,7 +13,7 @@ if($result = mysqli_query($mysql_id, "SELECT badge_number FROM users WHERE badge
         $query = "INSERT INTO users (`badge_number`, `playername`, `password`) VALUES ('" . $badgeNum . "', '" . $playerName . "', '" . $pwHash . "')";
 
         if(mysqli_query($mysql_id, $query)) {
-            echo "Felhasználód létrehozva!\n Várj türelemmel míg elfogadják azt!";
+            echo "<span style='color:green;'>Felhasználód létrehozva!\n Várj türelemmel míg elfogadják azt!</span>";
         } else echo "Hiba történt létrehozás közben!";
     } else echo "Már létezik felhasználó ezzel a jelvényszámmal vagy névvel!";
 } else echo "Hiba történt felhasználó ellenőrzés közben!";
