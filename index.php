@@ -22,6 +22,7 @@
 </html>
 <?php
 session_start();
+include("config.php");
 require("includes/connect.inc.php");
 require("includes/functions.inc.php");
 
