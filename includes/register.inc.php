@@ -6,6 +6,8 @@ $badgeNum = mysqli_real_escape_string($mysql_id, $_POST["badgeNum"]);
 $playerName = mysqli_real_escape_string($mysql_id, $_POST["playerName"]);
 $password = mysqli_real_escape_string($mysql_id, $_POST["password"]);
 
+echo playerName;
+
 $pwHash = hash('sha512', $password); // Bevitt jelszó dekódolása SHA512-vel
 
 if($result = mysqli_query($mysql_id, "SELECT badge_number FROM users WHERE badge_number='" . $badgeNum . "' OR playername='" . $playerName . "' LIMIT 1")) { // Ha sikeres a lekérés
