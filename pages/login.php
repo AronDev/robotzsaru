@@ -29,7 +29,7 @@
                         url: 'includes/login.inc.php',
                         data: { badgeNum : badgeNum, password : password },
                         success: function(response) {
-                            if(response == "reload")
+                            if(response == "reload") // Ha a visszatérő érték "reload"
                                 location.reload();
                             else
                                 loginInfo.html(response);
