@@ -37,35 +37,29 @@
             var registerInfo = $('#registerInfo');
 
             if($.trim(badgeNum) !== '') {
-                if($.trim(playerName) !== '') {
-                    if($.trim(password) !== '' || $.trim(password2) !== '') {
-                        if(password === password2) {
-                            $.ajax({
-                                type: 'POST',
-                                url: 'includes/register.inc.php',
-                                data: { badgeNum : badgeNum, password : password },
-                                success: function(response) {
-                                    if(response == "index")
-                                        window.location.href = '../index.php';
-                                    else
-                                        registerInfo.html(response);
-                                },
-                                error: function (response) {
-                                    console.log(response);
-                                }
-                            });
-                        } else {
-                            registerInfo.html('A két jelszó nem megegyező!');
-                        }
-                    } else {
-                        registerInfo.html('Hiányos jelszó!');
-                    }
-                } else {
-                    registerInfo.html('Hiányos név!');
-                }
-            } else {
-                registerInfo.html('Hiányos jelvényszám!');
-            }
+                if(!isNaN(badgeNum)) {
+                    if($.trim(playerName) !== '') {
+                        if($.trim(password) !== '' || $.trim(password2) !== '') {
+                            if(password === password2) {
+                                $.ajax({
+                                    type: 'POST',
+                                    url: 'includes/register.inc.php',
+                                    data: { badgeNum : badgeNum, password : password },
+                                    success: function(response) {
+                                        if(response == "index")
+                                            window.location.href = '../index.php';
+                                        else
+                                            registerInfo.html(response);
+                                    },
+                                    error: function (response) {
+                                        console.log(response);
+                                    }
+                                });
+                            } else egisterInfo.html('A két jelszó nem megegyező!');
+                        } else registerInfo.html('Hiányos jelszó!');
+                    } else registerInfo.html('Hiányos név!');
+                } else registerInfo.html('Hibás jelvényszám!');
+            } else registerInfo.html('Hiányos jelvényszám!');
         });
     </script>
 </html>
