@@ -1,7 +1,7 @@
 $('body').on('click', '#registerButton', function(e) {
     e.preventDefault();
     var badgeNum = $('#badgeNum').val();
-    var playerName = $('#playerName').val();
+    var playerName = $('#playerName').value();
     var password = $('#password').val();
     var password2 = $('#password2').val();
 
