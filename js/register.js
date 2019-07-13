@@ -17,7 +17,7 @@ $('body').on('click', '#registerButton', function(e) {
                                 $.ajax({
                                     type: 'POST',
                                     url: '../includes/register.inc.php',
-                                    data: { badgeNum : badgeNum, "playerName": playerName, password : password },
+                                    data: { playerName: playerName },
                                     success: function(response) {
                                         if(response == "index") window.location.href = '../index.php';
                                         else registerInfo.html(response);
