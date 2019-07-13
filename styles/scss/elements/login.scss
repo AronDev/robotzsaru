@@ -21,6 +21,7 @@
 .login-icon {
     font-size: 11px;
     margin-right:5px;
+    @include uncopiable;
 }
 
 input[type=text], input[type=password] {
@@ -30,6 +31,7 @@ input[type=text], input[type=password] {
     padding: 5px;
     width: 50%;
     text-align: center;
+    @include uncopiable;
     transition: 200ms all;
     &:focus {
         border-color: $blue-color;
