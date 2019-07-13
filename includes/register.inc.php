@@ -8,7 +8,9 @@ $password = mysqli_real_escape_string($mysql_id, $_POST["password"]);
 
 $pwHash = hash('sha512', $password); // Bevitt jelszó dekódolása SHA512-vel
 
-if($result = mysqli_query($mysql_id, "INSERT INTO users ('badge_number', 'playername', 'password') VALUES ('" . $badgeNum . "', '" . $playerName . "', '" . $pwHash . "')")) {
+$query = "INSERT INTO users ('badge_number', 'playername', 'password') VALUES ('" . $badgeNum . "', '" . $playerName . "', '" . $pwHash . "')";
+
+if(mysqli_query($mysql_id, $query)) {
     echo "Felhasználód létrehozva!\n Várj türelemmel míg elfogadják azt!";
 } else echo "Hiba történt!";
 
