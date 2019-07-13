@@ -14,12 +14,10 @@ $('body').on('click', '#registerButton', function(e) {
                     if([...playerName].length <= 25) {
                         if($.trim(password) !== '' || $.trim(password2) !== '') {
                             if(password === password2) {
-                                var data = { 'badgeNum': badgeNum, 'playerName': playerName, 'password': password };
-                                var dataStr = JSON.stringify(data);
                                 $.ajax({
                                     type: 'POST',
                                     url: '../includes/register.inc.php',
-                                    data: { data : dataStr },
+                                    data: { badgeNum : badgeNum, playerName : playerName, password : password },
                                     success: function(response) {
                                         if(response == "index") window.location.href = '../index.php';
                                         else registerInfo.html(response);
