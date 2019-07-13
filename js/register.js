@@ -7,13 +7,11 @@ $('body').on('click', '#registerButton', function(e) {
 
     var registerInfo = $('#registerInfo');
 
-    console.log(playerName);
-
     if($.trim(badgeNum) !== '') {
         if(!isNaN(badgeNum)) {
             if($.trim(playerName) !== '') {
                 if(playerName.indexOf('_') !== -1) {
-                    if([...playerName].length < 25) {
+                    if(playerName.length < 25) {
                         if($.trim(password) !== '' || $.trim(password2) !== '') {
                             if(password === password2) {
                                 $.ajax({
@@ -30,7 +28,7 @@ $('body').on('click', '#registerButton', function(e) {
                                         console.log(response);
                                     }
                                 });
-                            } else egisterInfo.html('A két jelszó nem megegyező!');
+                            } else registerInfo.html('A két jelszó nem megegyező!');
                         } else registerInfo.html('Hiányos jelszó!');
                     } else registerInfo.html('Túl hosszú név! (max 24 karakter)');
                 } else registerInfo.html('A névnek tartalmaznia kell alsóvonalat!');
