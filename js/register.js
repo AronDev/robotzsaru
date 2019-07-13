@@ -7,6 +7,8 @@ $('body').on('click', '#registerButton', function(e) {
 
     var registerInfo = $('#registerInfo');
 
+    console.log('playerName = ' + playerName);
+
     if($.trim(badgeNum) !== '') {
         if(!isNaN(badgeNum)) {
             if($.trim(playerName) !== '') {
