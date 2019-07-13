@@ -17,10 +17,10 @@
             <h1>Robotzsaru</h1>
             <h4>Regisztrálás</h4>
             </div><br />
-            <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
-            <input type="text" id="playerName" placeholder="Név"><br /><br />
-            <input type="password" id="password" placeholder="Jelszó"><br /><br />
-            <input type="password" id="password2" placeholder="Jelszó újra"><br /><br />
+            <input type="text" id="badgeNum" name="badgeNum" placeholder="Jelvényszám"><br /><br />
+            <input type="text" id="playerName" name="playerName" placeholder="Név"><br /><br />
+            <input type="password" id="password" name="password" placeholder="Jelszó"><br /><br />
+            <input type="password" id="password2" name="password2" placeholder="Jelszó újra"><br /><br />
             <button id="registerButton"><i class='fas fa-user-plus login-icon'></i>Regisztrálás</button><br /><br />
             <button onclick="window.location.href = '../index.php';"><i class='fas fa-angle-left login-icon'></i>Vissza</button><br /><br />
             <div id='registerInfo'>&nbsp</div><br />
