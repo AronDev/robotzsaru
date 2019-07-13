@@ -3,7 +3,7 @@
         <div class='title'>
             Tevékenységek
             <div class='description'>
-                Előállítások, helyszíni bírságok, stb..
+                Előállítások, helyszíni bírságok, lefoglalások, stb..
             </div>
         </div>
         <i class="far fa-clipboard icon"></i>

@@ -34,8 +34,10 @@
     margin-top: 5px;
     font-size: $default-font-size - 2;
     color: $whiteC3;
+    word-wrap: break-word;
 }
 
 .startpage-widget>.icon {
-
+    font-size: 32px;
+    text-align:center;
 }
