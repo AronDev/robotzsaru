@@ -10,8 +10,8 @@
             </div><br />
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
-            <button id="loginButton"><i class='fas fa-user-plus' style="margin-right:5px;"></i>Belépés</button><br /><br />
-            <button onclick="window.location.href = 'register.php';">Regisztrálás</button><br /><br />
+            <button id="loginButton"><i class='fas fa-sign-in-alt login-icon'></i>Belépés</button><br /><br />
+            <button onclick="window.location.href = 'pages/register.php';"><i class='fas fa-user-plus login-icon'></i>Regisztrálás</button><br /><br />
             <div id='loginInfo'>&nbsp</div><br />
         </div>
     </body>
