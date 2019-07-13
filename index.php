@@ -17,6 +17,7 @@
 <?php
 session_start();
 require("includes/connect.inc.php");
+require("includes/functions.inc.php");
 
 if($_SESSION['logged'] == true) { // Ha a felhasználó be van lépve
     include("pages/mainpage.php");

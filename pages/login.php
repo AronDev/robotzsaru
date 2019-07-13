@@ -11,7 +11,6 @@
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
             <button id="loginButton">Belépés</button><br /><br />
-            <div id="loginInfo">&nbsp</div>
         </div>
     </body>
     <script>
@@ -31,10 +30,10 @@
                         }
                     });
                 } else {
-                    document.getElementById('loginInfo').innerHTML = 'Hiányos jelszó!';
+                    $('#login-box').append("<div id='loginInfo'>Hiányos jelszó!</div>");
                 }
             } else {
-                document.getElementById('loginInfo').innerHTML = 'Hiányos jelvényszám!';
+                $('#login-box').append("<div id='loginInfo'>Hiányos jelvényszám!</div>");
             }
         });
     </script>

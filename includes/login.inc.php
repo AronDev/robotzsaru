@@ -15,10 +15,10 @@ if($count == 1) { // Ha létezik az adott jelvényszámmal felhasználó és a j
     // Adatok betöltése
     $_SESSION['logged'] = true;
     $_SESSION['badge_number'] = $badgeNum;
+
+    header("Refresh: 0, url=../index.php");
 } else {
-    echo "<script>
-    document.getElementById('loginInfo').innerHTML = 'Hibás adatok!';
-    </script>";
+    echo "<span id='loginInfo'>Hibás adatok!</span>";
 }
 
 unset($_POST);
