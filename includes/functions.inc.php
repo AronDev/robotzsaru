@@ -20,7 +20,6 @@ function getUserName($badgeNum) {
 }
 
 function RPName($name) {
-    str_replace("_", " ", $name);
-    return $name;
+    return str_replace("_", " ", $name);
 }
 ?>
