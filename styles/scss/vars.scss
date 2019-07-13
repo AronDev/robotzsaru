@@ -2,5 +2,18 @@ $blue-color: #4f8edc;
 $red-color: #d9534f;
 $gray-color: #4d4d4d;
 
-$default-font-color: $gray-color;
+$darkC0: #171717;
+$darkC1: #1d1d1d;
+$darkC2: #212121;
+$darkC3: #282828;
+
+$whiteC0: #fff;
+$whiteC1: #e7e7e7;
+$whiteC2: #e0e0e0;
+$whiteC3: #8d8d8d;
+
+$background-color: $darkC0;
+
+//$default-font-color: $gray-color;
+$default-font-color: $whiteC0;
 $default-font-size: 14px;

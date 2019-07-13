@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Robotzsaru - Belépés</title>
+        <title>Robotzsaru - Regisztrálás</title>
     </head>
     <body>
         <div id="login-box">
@@ -10,9 +10,9 @@
             </div><br />
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
-            <button id="loginButton"><i class='fas fa-user-plus' style="margin-right:5px;"></i>Belépés</button><br /><br />
-            <button onclick="window.location.href = 'register.php';">Regisztrálás</button><br /><br />
-            <div id='loginInfo'>&nbsp</div><br />
+            <button id="registerButton">Belépés</button><br /><br />
+            <button onclick="window.location.href = 'index.php';"><i class='fas fa-angle-left' style="margin-right:5px;"></i>Vissza</button><br /><br />
+            <div id='registerInfo'>&nbsp</div><br />
         </div>
     </body>
     <script>
