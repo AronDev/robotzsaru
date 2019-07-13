@@ -15,10 +15,9 @@ $('body').on('click', '#registerButton', function(e) {
                         if($.trim(password) !== '' || $.trim(password2) !== '') {
                             if(password === password2) {
                                 $.ajax({
-                                    traditional: true,
                                     type: 'POST',
                                     url: '../includes/register.inc.php',
-                                    data: { badgeNum : badgeNum, playerName : playerName, password : password },
+                                    data: { badgeNum : badgeNum, "playerName="+playerName, password : password },
                                     success: function(response) {
                                         if(response == "index") window.location.href = '../index.php';
                                         else registerInfo.html(response);
