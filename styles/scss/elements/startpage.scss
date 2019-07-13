@@ -9,6 +9,18 @@
     border: 1px solid rgba(0,0,0,0);
     width: 15%;
     height: 10%;
+    cursor: pointer;
+    &:hover {
+        -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+    }
+    &:active {
+        border-color: $blue-color;
+        -webkit-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        -moz-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+    }
 }
 
 .startpage-widget>.title {
@@ -19,7 +31,7 @@
 
 .startpage-widget>.title>.description {
     font-size: $default-font-size - 2;
-    color: $whiteC1;
+    color: $whiteC2;
 }
 
 .startpage-widget>.icon {
