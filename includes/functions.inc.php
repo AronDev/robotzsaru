@@ -18,4 +18,9 @@ function getUserName($badgeNum) {
     $row = mysqli_fetch_assoc($result);
     return $row['playername'];
 }
+
+function RPName($name) {
+    str_replace($name, "_", " ");
+    return $name;
+}
 ?>
