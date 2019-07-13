@@ -1,11 +1,13 @@
 .startpage-widget {
     background-color: $darkC1;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0);
     width: 15%;
     height: 10%;
 }
 
 .startpage-widget>.title {
-    background-color: $darkC2;
+    background-color: $darkC3;
     padding: 5px;
 }
 
