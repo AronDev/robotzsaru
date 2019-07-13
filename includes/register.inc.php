@@ -8,7 +8,7 @@ $password = mysqli_real_escape_string($mysql_id, $_POST["password"]);
 
 $pwHash = hash('sha512', $password); // Bevitt jelszó dekódolása SHA512-vel
 
-if($result = mysqli_query($mysql_id, "SELECT badge_number FROM users WHERE badge_number='" . $badgeNum . "' OR playername='" . $playerName . "'")) { // Ha sikeres a lekérés
+if($result = mysqli_query($mysql_id, "SELECT badge_number FROM users WHERE badge_number='" . $badgeNum . "' OR playername='" . $playerName . "' LIMIT 1")) { // Ha sikeres a lekérés
     if(mysqli_num_rows($result) == 0) { // Ha nem létezik már ilyen felhasználó ezzel a névvel vagy jelvényszámmal
         $query = "INSERT INTO users (`badge_number`, `playername`, `password`) VALUES ('" . $badgeNum . "', '" . $playerName . "', '" . $pwHash . "')";
 
