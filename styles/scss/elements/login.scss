@@ -7,6 +7,7 @@
     text-align: center;
     margin-top: 200px;
     width: 20%;
+    @include uncopiable;
 
     -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.7);
     -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.7);
@@ -21,7 +22,6 @@
 .login-icon {
     font-size: 11px;
     margin-right:5px;
-    @include uncopiable;
 }
 
 input[type=text], input[type=password] {
@@ -31,7 +31,6 @@ input[type=text], input[type=password] {
     padding: 5px;
     width: 50%;
     text-align: center;
-    @include uncopiable;
     transition: 200ms all;
     &:focus {
         border-color: $blue-color;
@@ -51,7 +50,6 @@ button {
     cursor: pointer;
     width: 50%;
     text-align: center;
-    @include uncopiable;
     transition: 200ms all;
     &:hover {
         background-color: $darkC1;
