@@ -39,7 +39,7 @@
             if($.trim(badgeNum) !== '') {
                 if($.trim(playerName) !== '') {
                     if($.trim(password) !== '' || $.trim(password2) !== '') {
-                        if(password === pasword2) {
+                        if(password == pasword2) {
                             $.ajax({
                                 type: 'POST',
                                 url: 'includes/register.inc.php',
