@@ -21,7 +21,7 @@ $('body').on('click', '#registerButton', function(e) {
                                     success: function(response) {
                                         if(response == "index") window.location.href = '../index.php';
                                         else registerInfo.html(response);
-                                        alert(playerName);
+                                        console.log(playerName);
                                     },
                                     error: function (response) {
                                         console.log(response);
