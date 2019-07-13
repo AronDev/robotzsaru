@@ -2,11 +2,11 @@
 session_start();
 require("connect.inc.php");
 
+echo $_POST["playerName"];
+
 $badgeNum = mysqli_real_escape_string($mysql_id, $_POST["badgeNum"]);
 $playerName = mysqli_real_escape_string($mysql_id, $_POST["playerName"]);
 $password = mysqli_real_escape_string($mysql_id, $_POST["password"]);
-
-echo $playerName;
 
 $pwHash = hash('sha512', $password); // Bevitt jelszó dekódolása SHA512-vel
 
