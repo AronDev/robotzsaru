@@ -1,0 +1,8 @@
+@import "scss/vars.scss";
+@import "scss/fonts.scss";
+
+body {
+    color: $default-font-color;
+    font-size: $default-font-size;
+    font-family: 'Montserrat', sans-serif;
+}
