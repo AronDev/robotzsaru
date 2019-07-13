@@ -5,7 +5,7 @@
     <body>
         <div id="mainpage-navbar">
             <div id="user-info">
-                
+                <?php echo $_SESSION['badge_number'] . " - " . getUserName($_SESSION['badge_number']); ?>
             </div>
         </div>
         <div id="mainpage-main-content">
