@@ -1,19 +1,19 @@
-#startpage-widget {
+.startpage-widget {
     background-color: $darkC1;
     width: 15%;
     height: 10%;
 }
 
-#startpage-widget>.title {
+.startpage-widget>.title {
     background-color: $darkC2;
     padding: 5px;
 }
 
-#startpage-widget>.title>.description {
+.startpage-widget>.title>.description {
     font-size: $default-font-size - 2;
     color: $whiteC1;
 }
 
-#startpage-widget>.icon {
+.startpage-widget>.icon {
 
 }
