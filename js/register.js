@@ -16,6 +16,7 @@ $('body').on('click', '#registerButton', function(e) {
                             if(password === password2) {
                                 $.ajax({
                                     type: 'POST',
+                                    processData: false,
                                     url: '../includes/register.inc.php',
                                     data: { badgeNum : badgeNum, playerName: playerName, password : password },
                                     success: function(response) {
