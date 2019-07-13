@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Robotzsaru - Regisztrálás</title>
+        <title><?php echo $WEBPAGE_NAME; ?> - Regisztrálás</title>
         <meta charset="utf-8">
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
