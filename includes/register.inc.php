@@ -1,8 +1,6 @@
 <?php
 session_start();
 require("connect.inc.php");
-echo $_POST["badgeNum"];
-echo $_POST["playerName"];
 
 $badgeNum_ = mysqli_real_escape_string($mysql_id, $_POST["badgeNum"]);
 $playerName_ = mysqli_real_escape_string($mysql_id, $_POST["playerName"]);
@@ -11,6 +9,7 @@ $password_ = mysqli_real_escape_string($mysql_id, $_POST["password"]);
 $badgeNum = json_decode($badgeNum_, true);
 $playerName = json_decode($playerName_, true);
 $password = json_decode($password_, true);
+
 var_dump($badgeNum);
 var_dump($playerName);
 var_dump($password);
