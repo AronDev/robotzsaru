@@ -14,9 +14,9 @@ if($result = mysqli_query($mysql_id, "SELECT badge_number FROM users WHERE badge
 
         if(mysqli_query($mysql_id, $query)) {
             echo "Felhasználód létrehozva!\n Várj türelemmel míg elfogadják azt!";
-        } else echo "Hiba történt!2";
+        } else echo "Hiba történt létrehozás közben!";
     } else echo "Már létezik felhasználó ezzel a jelvényszámmal vagy névvel!";
-} else echo "Hiba történt!1";
+} else echo "Hiba történt felhasználó ellenőrzés közben!";
 
 // POST adatok törlése
 unset($_POST);
