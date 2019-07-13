@@ -11,7 +11,7 @@ $('body').on('click', '#registerButton', function(e) {
         if(!isNaN(badgeNum)) {
             if($.trim(playerName) !== '') {
                 if(playerName.indexOf('_') !== -1) {
-                    if(playerName.length < 25) {
+                    if([...playerName].length <= 25) {
                         if($.trim(password) !== '' || $.trim(password2) !== '') {
                             if(password === password2) {
                                 $.ajax({
@@ -19,10 +19,9 @@ $('body').on('click', '#registerButton', function(e) {
                                     url: '../includes/register.inc.php',
                                     data: { badgeNum : badgeNum, playerName : playerName, password : password },
                                     success: function(response) {
-                                        if(response == "index")
-                                            window.location.href = '../index.php';
-                                        else
-                                            registerInfo.html(response);
+                                        if(response == "index") window.location.href = '../index.php';
+                                        else registerInfo.html(response);
+                                        alert(playerName);
                                     },
                                     error: function (response) {
                                         console.log(response);
