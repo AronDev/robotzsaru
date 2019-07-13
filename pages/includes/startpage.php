@@ -6,6 +6,6 @@
                 Előállítások, helyszíni bírságok, lefoglalások, stb..
             </div>
         </div>
-        <i class="far fa-clipboard icon"></i>
+        <i align="center" class="far fa-clipboard icon"></i>
     </div>
 </div>
