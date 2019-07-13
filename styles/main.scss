@@ -1,8 +1,13 @@
 @import "scss/vars.scss";
 @import "scss/fonts.scss";
+@import "scss/elements/main.scss";
 
 body {
     color: $default-font-color;
     font-size: $default-font-size;
     font-family: 'Montserrat', sans-serif;
+}
+
+*:focus {
+    outline: none;
 }

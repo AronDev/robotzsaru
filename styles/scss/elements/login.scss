@@ -1,0 +1,33 @@
+#login-box {
+    margin: auto;
+    border-radius: 4px;
+    border: 1px solid rgba($gray-color, .5);
+    padding: 20px;
+    text-align: center;
+    margin-top: 200px;
+    width: 20%;
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid rgba($gray-color, .5);
+    border-radius: 4px;
+    padding: 5px;
+    width: 50%;
+    transition: 300ms all;
+    &:focus {
+        border-color: $blue-color;
+    }
+}
+
+button {
+    padding: 5px;
+    border: 1px solid rgba($gray-color, .5);
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    width: 50%;
+    transition: 300ms all;
+    &:hover {
+        background-color: rgba($gray-color, .1);
+    }
+}
