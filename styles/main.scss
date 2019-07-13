@@ -8,6 +8,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+input[type=text], input[type=password] {
+    font-family: 'Open Sans', sans-serif;
+}
+
 *:focus {
     outline: none;
 }
