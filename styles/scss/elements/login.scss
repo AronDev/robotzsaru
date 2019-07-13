@@ -50,12 +50,13 @@ button {
     transition: 300ms all;
     &:hover {
         background-color: $darkC1;
-        -webkit-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
     }
     &:active {
         background-color: $blue-color
+
+        -webkit-box-shadow: 0px 0px 0px 5px $blue-color;
+        -moz-box-shadow: 0px 0px 0px 5px $blue-color;
+        box-shadow: 0px 0px 0px 5px $blue-color;
     }
 }
 
