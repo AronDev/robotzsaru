@@ -13,7 +13,7 @@
         <div id="login-box">
             <div id="login-title">
             <h1>Robotzsaru</h1>
-            <h4>Belépés</h4>
+            <h4>Regisztrálás</h4>
             </div><br />
             <input type="text" id="badgeNum" placeholder="Jelvényszám"><br /><br />
             <input type="password" id="password" placeholder="Jelszó"><br /><br />
