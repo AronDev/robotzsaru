@@ -11,9 +11,6 @@
                 echo "<div class='activity-widget'>";
                     echo "<div class='title dropdown'>";
                     echo $row['title'];
-                    echo "<div class='description'>";
-                    echo $row['playername'] . " - " . $row['timestamp'];
-                    echo "</div>";
                     echo "</div>";
                     echo "<div class='msg'>";
                     echo substr($row['text'], 0, 30) . "...";
