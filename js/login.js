@@ -9,7 +9,7 @@ $('body').on('click', '#loginButton', function(e) {
         if($.trim(password) !== '') {
             $.ajax({
                 type: 'POST',
-                url: 'includes/login.inc.php',
+                url: '',
                 data: { badgeNum : badgeNum, password : password },
                 success: function(response) {
                     if(response == "reload")
