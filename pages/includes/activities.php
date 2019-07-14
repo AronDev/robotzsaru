@@ -9,13 +9,13 @@
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<div class='activity-widget'>";
-                    echo "<div class='title'>";
+                    echo "<div class='title dropdown'>";
                     echo $row['title'];
                     echo "<div class='description'>";
                     echo $row['playername'] . " - " . $row['timestamp'];
                     echo "</div>";
                     echo "</div>";
-                    echo "<div class='msg dropdown'>";
+                    echo "<div class='msg'>";
                     echo substr($row['text'], 0, 30) . "...";
                     echo "</div>";
                 echo "</div>";
@@ -27,15 +27,15 @@
         var i;
 
         for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight){
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
         }
         </script>
     </body>
