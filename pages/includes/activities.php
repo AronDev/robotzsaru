@@ -12,6 +12,9 @@
                     echo "<div class='title dropdown'>";
                     echo $row['title'];
                     echo "</div>";
+                    echo "<div class='description'>";
+                    echo $row['playername'] . " - " . $row['timestamp'];
+                    echo "</div>";
                     echo "<div class='msg'>";
                     echo substr($row['text'], 0, 30) . "...";
                     echo "</div>";
@@ -19,21 +22,5 @@
             }
         } else echo "Nincsenek tevékenységek!";
         ?>
-        <script>
-        var acc = document.getElementsByClassName("dropwdown");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight){
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
-        </script>
     </body>
 </html>
