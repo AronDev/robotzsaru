@@ -12,7 +12,7 @@
                     echo "<div class='title'>";
                     echo $row['title'];
                     echo "<div class='description'>";
-                    echo $row['playername'] . " - " $row['timestamp'];
+                    echo $row['playername'] . " - " . $row['timestamp'];
                     echo "</div>";
                     echo "</div>";
                     echo "<div class='message'>";
