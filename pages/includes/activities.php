@@ -5,7 +5,7 @@
     <body>
         <h1>Tevékenységnapló</h1><br />
         <?php
-        $result = mysqli_query($mysql_id, "SELECT activites.*, users.name FROM activities INNER JOIN users ON users.dbid=activities.user ORDER BY timestamp DESC");
+        $result = mysqli_query($mysql_id, "SELECT activities.*, users.playername FROM activities INNER JOIN users ON users.badge_number=activities.user ORDER BY timestamp DESC");
         if(mysqli_num_rows($result) > 0) {
             while($row = mysqli_fetch_assoc($result)) {
                 echo "<div class='activity-widget'>";
