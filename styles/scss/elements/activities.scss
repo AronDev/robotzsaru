@@ -1,0 +1,44 @@
+.activity-widget {
+    background-color: $darkC1;
+    display: inline-block;
+    min-height: 10%;
+    vertical-align:top;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0);
+    width: 15%;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 200ms all;
+    &:hover {
+        -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+        box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+    }
+    &:active {
+        border-color: $blue-color;
+        -webkit-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        -moz-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+    }
+}
+
+.activity-widget>.title {
+    font-size: $default-font-size + 6;
+    background-color: $darkC3;
+    padding: 10px;
+}
+
+.activity-widget>.title>.description {
+    margin-top: 5px;
+    font-size: $default-font-size - 2;
+    color: $whiteC3;
+    word-wrap: break-word;
+}
+
+.activity-widget>.msg {
+    margin-top: 5px;
+    padding: 5px;
+    border-top: 1px solid $darkC3;
+    color: $whiteC3;
+    word-wrap: break-word;
+}
