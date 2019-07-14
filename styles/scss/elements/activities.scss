@@ -27,8 +27,13 @@
     background-color: $darkC3;
     padding: 10px;
 }
+.activity-widget>.title>.timestamp {
+    font-size: $default-font-size;
+    background-color: $darkC3;
+    text-align: right;
+}
 
-.activity-widget>.title>.description {
+.activity-widget>.description {
     margin-top: 5px;
     font-size: $default-font-size - 2;
     color: $whiteC3;

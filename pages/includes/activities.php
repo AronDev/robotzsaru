@@ -11,10 +11,12 @@
                 echo "<div class='activity-widget'>";
                     echo "<div class='title'>";
                     echo $row['title'];
-                    echo "<br />" . $row['playername'];
-                    echo "</div>";
                     echo "<div class='description'>";
-
+                    echo $row['playername'];
+                    echo "</div>";
+                    echo "<div class='timestamp'>";
+                    echo $row['timestamp'];
+                    echo "</div>";
                     echo "</div>";
                     echo "<div class='message'>";
                     echo substr($row['text'], 0, 30) . "...";
