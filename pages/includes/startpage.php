@@ -11,7 +11,7 @@
             $result = mysqli_query($mysql_id, "SELECT title, users.playername FROM activities INNER JOIN users ON users.badge_number=activities.user ORDER BY timestamp DESC LIMIT 1");
             if(mysqli_num_rows($result) > 0) {
                 $row = mysqli_fetch_assoc($result);
-                echo "Legutóbbi tevékenység: " . $row['playername'] . " -> " . $row['title'];
+                echo "Legutóbbi: " . $row['playername'] . " -> " . $row['title'];
             } else echo "Nincs legutóbbi tevékenység!";
             ?>
         </div>
