@@ -15,7 +15,7 @@
                     echo $row['playername'] . " - " . $row['timestamp'];
                     echo "</div>";
                     echo "</div>";
-                    echo "<div class='message'>";
+                    echo "<div class='msg'>";
                     echo substr($row['text'], 0, 30) . "...";
                     echo "</div>";
                 echo "</div>";
