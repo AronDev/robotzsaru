@@ -3,7 +3,7 @@
         <title><?php echo $WEBPAGE_NAME; ?> - Tevékenységnapló</title>
     </head>
     <body>
-        <h1>Tevékenységnapló</h1>
+        <h1>Tevékenységnapló</h1><br />
         <?php
         $result = mysqli_query($mysql_id, "SELECT activites.*, users.name FROM activities INNER JOIN users ON users.dbid=activities.user ORDER BY timestamp DESC");
         if(mysqli_num_rows($result) > 0) {
