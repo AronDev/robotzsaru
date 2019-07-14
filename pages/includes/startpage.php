@@ -6,7 +6,7 @@
                 Előállítások, helyszíni bírságok, lefoglalások, stb..
             </div>
         </div>
-        <div class='description'>
+        <div class='other'>
             <?php
             $result = mysqli_query($mysql_id, "SELECT title, users.playername FROM activities INNER JOIN users ON users.badge_number=activities.user ORDER BY timestamp DESC LIMIT 1");
             if(mysqli_num_rows($result) > 0) {
