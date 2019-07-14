@@ -4,7 +4,7 @@
     </head>
     <body>
         <div id="mainpage-navbar">
-            <div id="page-info" onclick="window.location.href = 'index.php';">
+            <div id="page-info" style="cursor: pointer;" onclick="window.location.href = 'index.php';">
                 Robotzsaru
             </div>
             <div id="user-info">
