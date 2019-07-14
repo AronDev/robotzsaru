@@ -19,6 +19,9 @@
                 case 'mainpage': {
                     include("pages/includes/startpage.php");
                     break;
+                } case 'activities': {
+                    include("pages/includes/activities.php");
+                    break;
                 } default: include("pages/includes/startpage.php");
             }
             ?>
