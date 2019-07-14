@@ -1,11 +1,10 @@
 .activity-widget {
     background-color: $darkC1;
-    display: inline-block;
     min-height: 10%;
     vertical-align:top;
     border-radius: 4px;
     border: 1px solid rgba(0,0,0,0);
-    width: 15%;
+    width: 30%;
     margin-right: 10px;
     cursor: pointer;
     transition: 200ms all;
@@ -36,7 +35,7 @@
 }
 
 .activity-widget>.msg {
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 5px;
     border-top: 1px solid $darkC3;
     color: $whiteC3;
