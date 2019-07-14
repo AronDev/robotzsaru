@@ -5,7 +5,7 @@
     <body>
         <div id="mainpage-navbar">
             <div id="page-info" style="cursor: pointer;" onclick="window.location.href = 'index.php';">
-                Robotzsaru
+                <?php echo $WEBPAGE_NAME; ?>
             </div>
             <div id="user-info">
                 <?php echo $_SESSION['badge_number'] . " - " . RPName(getUserName($_SESSION['badge_number'])); ?>
