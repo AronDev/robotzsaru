@@ -19,6 +19,20 @@ function getUserName($badgeNum) {
     return $row['playername'];
 }
 
+function getUserDivName($badgeNum, $type = 0) { // 0 - name | 1 - sname
+    require("connect.inc.php");
+    $result = mysqli_query($mysql_id, "SELECT name, sname FROM divisions WHERE dbid=(SELECT division FROM users WHERE badge_number='" . $badgeNum . "')");
+    $row = mysqli_fetch_assoc($result);
+    return $type == 0 ? $row['name'] : $row['sname'];
+}
+
+function getUserRankName($badgeNum) {
+    require("connect.inc.php");
+    $result = mysqli_query($mysql_id, "SELECT name FROM ranks WHERE dbid=(SELECT rank FROM users WHERE badge_number='" . $badgeNum . "')");
+    $row = mysqli_fetch_assoc($result);
+    return $row['name'];
+}
+
 function RPName($name) {
     return str_replace("_", " ", $name);
 }
