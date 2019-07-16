@@ -32,8 +32,8 @@
             <a class='new-button' href='index.php?p=files&t=new' style='float:right;'>Új akta</a><br /><br />
             <table id="files">
                 <tr>
-                    <th class='files-header'>Akta</th>
-                    <th class='files-header'>Időpont</th>
+                    <th class='files-header'>Sorszám</th>
+                    <th class='files-header'>Kelt</th>
                     <th class='files-header'>Szerző</th>
                     <th class='files-header'>Megnevezés</th>
                     <th class='files-header'>Művelet</th>
