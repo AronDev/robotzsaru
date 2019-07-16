@@ -15,7 +15,7 @@
             <?php
             $page = isset($_GET['p']) ? $_GET['p'] : '';
             $type = isset($_GET['t']) ? $_GET['t'] : '';
-            $dbid = isset($_GET['id']) ? $_GET['id'] : '';
+            $id = isset($_GET['id']) ? $_GET['id'] : '';
             switch($page) {
                 case 'mainpage': {
                     include("pages/includes/startpage.php");
