@@ -7,9 +7,12 @@
     box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
 }
 
+#files>td, #files>tr {
+    border: 1px solid $darkC1;
+}
+
 #files>td {
     cursor: pointer;
-    border: 1px solid $darkC1;
     transition: 200ms all;
     &:hover {
 
