@@ -1,3 +1,6 @@
+<?php
+include("../config.php");
+?>
 <html>
     <head>
         <title><?php echo $WEBPAGE_NAME; ?> - Regisztrálás</title>

@@ -1,6 +1,5 @@
 <?php
 session_start();
-include("../config.php");
 require("connect.inc.php");
 
 $badgeNum = mysqli_real_escape_string($mysql_id, $_POST["badgeNum"]);
