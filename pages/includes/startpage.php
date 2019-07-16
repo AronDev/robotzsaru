@@ -1,5 +1,5 @@
 <div id="startpage-widgets">
-    <div onclick="window.location.href = 'index.php?p=activities';" class="startpage-widget">
+    <div onclick="window.location.href = 'index.php?p=files';" class="startpage-widget">
         <div class='title'>
             Akták
             <i class="far fa-clipboard icon"></i>
