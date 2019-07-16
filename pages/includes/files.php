@@ -47,7 +47,7 @@
                             echo "<td class='files-column'>" . $row['timestamp'] . "</td>";
                             echo "<td class='files-column'>" . $row['playername'] . "</td>";
                             echo "<td class='files-column'>" . $row['title'] . "</td>";
-                            echo "<td class='files-column'><a href='index.php?p=files&t=view&dbid=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a></td>";
+                            echo "<td class='files-column'><a href='index.php?p=files&t=view&id=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a></td>";
                         echo "</tr>";
                     }
                 } else echo "<tr><td colspan='4'>Nincsenek akták!</td></tr>";
