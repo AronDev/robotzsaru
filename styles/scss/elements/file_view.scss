@@ -11,15 +11,15 @@
     box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
 }
 
-#fileview_table, #fileview_table>tr>th, #fileview_table>tr>td {
+#fileview_table, #fileview_table>tbody>tr>th, #fileview_table>tbody>tr>td {
     border: 1px solid $darkC3;
 }
 
-#fileview_table>tr {
+#fileview_table>tbody>tr {
     padding: 10px;
 }
 
-#fileview_table>tr>td {
+#fileview_table>tbody>tr>td {
     padding: 10px;
     text-align: center;
 }
