@@ -1,5 +1,5 @@
 <?php
-if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$dbid'")) {
+if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='files-content'>";
     echo "<table id='files'>";
@@ -15,7 +15,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
 
         echo "<tr>";
             echo "<td><b>Szerző</b></td>";
-            echo "<td>" . $row['playername'] . "</td>";
+            echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . $row['playername'] . "</a></td>";
         echo "</tr>";
 
         echo "<tr>";
