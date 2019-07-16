@@ -9,6 +9,7 @@
 
 #files>td {
     cursor: pointer;
+    border: 1px solid $darkC1;
     transition: 200ms all;
     &:hover {
 
