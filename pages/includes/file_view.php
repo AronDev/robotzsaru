@@ -2,10 +2,10 @@
 if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='files-content'>";
-    echo "<span style='display: inline;margin-bottom:10px;'>";
+    echo "<div style='display: inline;margin-bottom:20px;'>";
     echo "<a class='button-danger' style='float:right;'>Törlés</a>";
     echo "<a class='button-norm' style='float:right;'>Módosítás</a>";
-    echo "</span>";
+    echo "</div>";
     echo "<table id='files'>";
         echo "<tr>";
             echo "<td><b>Akta sorszáma</b></td>";
