@@ -42,7 +42,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
 ?>
 
 <div id='fileview_content'>
-<h1>Új akta</h1>
+<h1>Új akta</h1><br />
 <table id='fileview_table'>
     <tr>
         <td><b>Akta sorszáma</b></td>
@@ -62,4 +62,6 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
         </td>
     </tr>
 </table>
+<a class='button-primary'>Létrehozás</a>
 </div>
+<script src='js/new_file.js'></script>
