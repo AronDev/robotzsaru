@@ -15,12 +15,18 @@
             <?php
             $page = isset($_GET['p']) ? $_GET['p'] : '';
             $type = isset($_GET['t']) ? $_GET['t'] : '';
+            $dbid = isset($_GET['dbid']) ? $_GET['dbid'] : '';
             switch($page) {
                 case 'mainpage': {
                     include("pages/includes/startpage.php");
                     break;
                 } case 'files': {
-                    include("pages/includes/files.php");
+                    switch($t) {
+                        case 'view': {
+                            include("pages/includes/file_view.php");
+                            break;
+                        } default: include("pages/includes/files.php");
+                    }
                     break;
                 } default: include("pages/includes/startpage.php");
             }
