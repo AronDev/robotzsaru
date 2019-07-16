@@ -3,7 +3,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     $row = mysqli_fetch_assoc($result);
     echo "<div id='files-content'>";
     echo "<span style='display: inline;'>";
-    echo "<a class='button-norm' style='float:right;'>Módosítás</a><br /><br />";
+    echo "<a class='button-norm' style='float:right;'>Módosítás</a>";
     echo "<a class='button-danger' style='float:right;'>Törlés</a><br /><br />";
     echo "</span>";
     echo "<table id='files'>";
