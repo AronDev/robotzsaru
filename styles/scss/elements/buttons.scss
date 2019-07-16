@@ -36,3 +36,21 @@
         box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
     }
 }
+.button-norm {
+    background: linear-gradient(#406270, #304055);
+    border: 1px solid #083;
+    border-radius: 3.5px;
+    color: $whiteC2;
+    font-weight: 600;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    text-decoration: none;
+    &:hover {
+        background: linear-gradient(#506c80, #405a70) !important;
+    }
+    &:active {
+        box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
+    }
+}
