@@ -20,7 +20,8 @@
     text-align: center;
 }
 
-.files-column>.icon {
+.files-column>a {
     font-size: $default-font-size - 2;
     margin-right: 5px;
+    color: $default-font-color;
 }
