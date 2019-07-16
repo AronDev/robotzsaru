@@ -28,23 +28,3 @@
     margin-right: 5px;
     color: $default-font-color;
 }
-
-.new-button {
-    background: linear-gradient(#407045, #305530);
-    border: 1px solid #083;
-    border-radius: 3.5px;
-    color: $whiteC2;
-    font-weight: 600;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
-    text-decoration: none;
-    transition: 200ms all;
-    &:hover {
-        background: linear-gradient(#508055, #407045) !important;
-    }
-    &:active {
-        box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
-    }
-}
