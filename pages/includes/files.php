@@ -4,7 +4,7 @@
     </head>
     <body>
         <h1>Akták</h1><br />
-        ÚJ AKTA TODO
+        <a class='new-button'>Új akta</a>
         <table id="files">
             <tr>
                 <th class='files-header'>Akta</th>
