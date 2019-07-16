@@ -10,6 +10,10 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     echo "<br /><br />";
     echo "<table id='files'>";
         echo "<tr>";
+            echo "<th><b>Akta sorszáma</b></th>";
+            echo "<th>" . $row['file_name'] . "</th>";
+        echo "</tr>";
+        echo "<tr>";
             echo "<td><b>Akta sorszáma</b></td>";
             echo "<td>" . $row['file_name'] . "</td>";
         echo "</tr>";
