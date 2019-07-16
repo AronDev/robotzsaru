@@ -10,8 +10,9 @@
     padding-top: 6px;
     text-decoration: none;
     &:hover {
-        color: $whiteC2;
-        background-color: #f44;
+        color: $whiteC2 !important;
+        border-color: #f44 !important;
+        background: #f44 !important;
     }
     &:active {
         box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
