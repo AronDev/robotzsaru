@@ -28,8 +28,8 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
             echo "<td colspan='2'><b>Akta tartalma</b></td>";
         echo "</tr>";
 
-        echo "<tr>";
-            echo "<td colspan='2'>" . $row['text'] . "</td>";
+        echo "<tr style='padding-bottom: 5px;'>";
+            echo "<td colspan='2'><br />" . $row['text'] . "</td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
