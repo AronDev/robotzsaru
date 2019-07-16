@@ -11,8 +11,10 @@ $('body').on('click', '.submit-new-file', function(e) {
                     type: 'POST',
                     url: 'includes/new_file.inc.php',
                     data: { filename : filename, title : title, text : text },
-                    success: function () {
-
+                    success: function (response) {
+                        if(!isNaN(response)) {
+                            window.location.href = 'index.php?p=files&t=view&id=' + response;
+                        }
                     },
                     error: function (response) {
                         infomsg.html('Hiba létrehozás közben!');
