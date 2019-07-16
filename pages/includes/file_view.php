@@ -29,7 +29,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
         echo "</tr>";
 
         echo "<tr>";
-            echo "<td colspan='2'><br />" . $row['text'] . "<br /></td>";
+            echo "<td colspan='2'><br />" . $row['text'] . "<br /><br /></td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
