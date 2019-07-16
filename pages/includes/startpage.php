@@ -2,7 +2,7 @@
     <div onclick="window.location.href = 'index.php?p=activities';" class="startpage-widget">
         <div class='title'>
             Akták
-            <i class="far fa-clipboard" style='float:right;'></i>
+            <i class="far fa-clipboard icon"></i>
             <div class='description'>
                 Nyomozati akták
             </div>
