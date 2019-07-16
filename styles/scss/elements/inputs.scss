@@ -1,0 +1,38 @@
+input[type=text], input[type=password] {
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 4px;
+    background-color: $darkC2 !important;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    transition: 200ms all;
+    &:focus {
+        border-color: $blue-color;
+        -webkit-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        -moz-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+    }
+}
+
+button {
+    padding: 5px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    border: 1px solid $darkC3;
+    border-radius: 4px;
+    background-color: $darkC3;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    transition: 200ms all;
+    &:hover {
+        background-color: $darkC1;
+    }
+    &:active {
+        //background-color: $blue-color;
+        border-color: $blue-color;
+        -webkit-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        -moz-box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+        box-shadow: 0px 0px 0px 4px rgba($blue-color, .4);
+    }
+}

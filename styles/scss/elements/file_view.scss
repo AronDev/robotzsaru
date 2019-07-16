@@ -1,0 +1,25 @@
+#fileview_content {
+    width: 70%;
+}
+
+#fileview_table {
+    width: 100%;
+    background-color: $darkC2;
+    border-collapse: collapse;
+    -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+    box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+}
+
+#fileview_table, #fileview_table>th, #fileview_table>td, #fileview_table>tr {
+    border: 1px solid $darkC3;
+}
+
+#fileview_table>tr {
+    padding: 10px;
+}
+
+#fileview_table>td {
+    padding: 10px;
+    text-align: center;
+}
