@@ -5,7 +5,7 @@
     <body>
         <h1>Akták</h1><br />
         ÚJ AKTA TODO
-        <table id="files">
+        <table id="files" border="1px">
             <tr>
                 <th>Akta</th>
                 <th>Időpont</th>
