@@ -5,6 +5,7 @@
     <body>
         <h1>Akták</h1><br />
         <div id="files-content">
+            <input class='search' id='f_search' onkeyup='search_fileName()'>
             <a class='new-button' style='float:right;'>Új akta</a><br />
             <table id="files">
                 <tr>
@@ -30,5 +31,27 @@
                 ?>
             </table>
         </div>
+        <script>
+		function search_fileName() {
+		  // Declare variables
+		  var input, filter, table, tr, td, i;
+		  input = document.getElementById("f_search");
+		  filter = input.value.toUpperCase();
+		  table = document.getElementById("files");
+		  tr = table.getElementsByTagName("tr");
+
+		  // Loop through all table rows, and hide those who don't match the search query
+		  for (i = 0; i < tr.length; i++) {
+		    td = tr[i].getElementsByTagName("td")[1];
+		    if (td) {
+		      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		        tr[i].style.display = "";
+		      } else {
+		        tr[i].style.display = "none";
+		      }
+		    }
+		  }
+		}
+        </script>
     </body>
 </html>
