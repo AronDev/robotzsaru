@@ -28,7 +28,7 @@
     <body>
         <h1>Akták</h1><br />
         <div id="files-content">
-            <input class='search' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Akta sorszáma' style='with: 20%'>
+            <input class='search' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Akta sorszáma' style='width: 20%'>
             <a class='new-button' href='index.php?p=files&t=new' style='float:right;'>Új akta</a><br /><br />
             <table id="files">
                 <tr>
