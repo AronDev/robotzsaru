@@ -2,6 +2,7 @@
 if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='files-content'>";
+    echo "<h1>Akták » " . $row['file_name'] . "</h1>";
     echo "<div style='display: inline;'>";
     echo "<a class='button-danger' style='float:right;'>Törlés</a>";
     echo "<a href='index.php?p=files&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
