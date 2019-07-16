@@ -1,6 +1,7 @@
 <?php
 if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
+    echo "<html><head><title><?php echo $WEBPAGE_NAME . " - " . $row['file_name']; ?></title></head></html>";
     echo "<div id='files-content'>";
     echo "<div style='display: inline;'>";
     echo "<a class='button-danger' style='float:right;'>Törlés</a>";

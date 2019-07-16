@@ -25,7 +25,10 @@
                         case 'view': {
                             include("pages/includes/file_view.php");
                             break;
-                        } default: include("pages/includes/files.php");
+                        } case 'new': {
+                            include("pages/includes/file_new.php");
+                            break;
+                        }default: include("pages/includes/files.php");
                     }
                     break;
                 } default: include("pages/includes/startpage.php");
