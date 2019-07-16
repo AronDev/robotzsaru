@@ -9,35 +9,31 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     echo "</div>";
     echo "<br /><br />";
     echo "<table id='files'>";
-        echo "<tr>";
-            echo "<th><b>Akta sorszáma</b></th>";
-            echo "<th>" . $row['file_name'] . "</th>";
-        echo "</tr>";
-        echo "<tr>";
+        echo "<tr class='files-row'>";
             echo "<td><b>Akta sorszáma</b></td>";
             echo "<td>" . $row['file_name'] . "</td>";
         echo "</tr>";
 
-        echo "<tr>";
+        echo "<tr class='files-row'>";
             echo "<td><b>Megnevezés</b></td>";
             echo "<td>" . $row['title'] . "</td>";
         echo "</tr>";
 
-        echo "<tr>";
+        echo "<tr class='files-row'>";
             echo "<td><b>Szerző</b></td>";
             echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . RPName($row['playername']) . "</a></td>";
         echo "</tr>";
 
-        echo "<tr>";
+        echo "<tr class='files-row'>";
             echo "<td><b>Kelt</b></td>";
             echo "<td>" . $row['timestamp'] . "</td>";
         echo "</tr>";
 
-        echo "<tr>";
+        echo "<tr class='files-row'>";
             echo "<td colspan='2'><b>Akta tartalma</b></td>";
         echo "</tr>";
 
-        echo "<tr>";
+        echo "<tr class='files-row'>";
             echo "<td colspan='2'><br />" . $row['text'] . "<br /><br /></td>";
         echo "</tr>";
     echo "</table>";
