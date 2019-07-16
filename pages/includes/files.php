@@ -1,6 +1,29 @@
 <html>
     <head>
         <title><?php echo $WEBPAGE_NAME; ?> - Akták</title>
+
+        <script>
+		function search_fileName() {
+		  // Declare variables
+		  var input, filter, table, tr, td, i;
+		  input = document.getElementById("f_search");
+		  filter = input.value.toUpperCase();
+		  table = document.getElementById("files");
+		  tr = table.getElementsByTagName("tr");
+
+		  // Loop through all table rows, and hide those who don't match the search query
+		  for (i = 0; i < tr.length; i++) {
+		    td = tr[i].getElementsByTagName("td")[1];
+		    if (td) {
+		      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+		        tr[i].style.display = "";
+		      } else {
+		        tr[i].style.display = "none";
+		      }
+		    }
+		  }
+		}
+        </script>
     </head>
     <body>
         <h1>Akták</h1><br />
@@ -31,27 +54,5 @@
                 ?>
             </table>
         </div>
-        <script>
-		function search_fileName() {
-		  // Declare variables
-		  var input, filter, table, tr, td, i;
-		  input = document.getElementById("f_search");
-		  filter = input.value.toUpperCase();
-		  table = document.getElementById("files");
-		  tr = table.getElementsByTagName("tr");
-
-		  // Loop through all table rows, and hide those who don't match the search query
-		  for (i = 0; i < tr.length; i++) {
-		    td = tr[i].getElementsByTagName("td")[1];
-		    if (td) {
-		      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-		        tr[i].style.display = "";
-		      } else {
-		        tr[i].style.display = "none";
-		      }
-		    }
-		  }
-		}
-        </script>
     </body>
 </html>
