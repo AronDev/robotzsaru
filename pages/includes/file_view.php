@@ -2,7 +2,7 @@
 if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='files-content'>";
-    echo "<a class='button-danger'>Törlés</a>"
+    echo "<a class='button-danger'>Törlés</a>";
     echo "<table id='files'>";
         echo "<tr>";
             echo "<td><b>Akta sorszáma</b></td>";
