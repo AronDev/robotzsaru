@@ -10,7 +10,7 @@ $badgenum = $_SESSION['badge_number'];
 
 if($result = mysqli_query($mysql_id, "INSERT INTO files (`file_name`, `title`, `author`, `text`) VALUES ('$filename', '$title', '$badgenum', '$text')")) {
     $id = mysqli_insert_id();
-    header("Refresh: 0, url=index.php?p=files&t=view&id=$id);
+    header("Refresh: 0, url=index.php?p=files&t=view&id=$id");
 } else echo "Hiba történt!";
 
 // POST adatok törlése
