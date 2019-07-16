@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title><?php echo $WEBPAGE_NAME; ?> - Főoldal</title>
+        <title><?php echo $WEBPAGE_NAME; ?></title>
     </head>
     <body>
         <div id="mainpage-navbar">
