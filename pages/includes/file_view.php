@@ -15,7 +15,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
 
         echo "<tr>";
             echo "<td><b>Szerző</b></td>";
-            echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . $row['playername'] . "</a></td>";
+            echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . RPName($row['playername']) . "</a></td>";
         echo "</tr>";
 
         echo "<tr>";
