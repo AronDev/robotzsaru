@@ -28,7 +28,7 @@
     <body>
         <h1>Akták</h1><br />
         <div id="files-content">
-            <input class='search' id='f_search' onkeyup='search_fileName()'>
+            <input class='search' type='text' id='f_search' onkeyup='search_fileName()'>
             <a class='new-button' style='float:right;'>Új akta</a><br />
             <table id="files">
                 <tr>
