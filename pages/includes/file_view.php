@@ -10,31 +10,31 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     echo "<br /><br />";
     echo "<table id='files'>";
         echo "<tr class='files-row'>";
-            echo "<td><b>Akta sorszáma</b></td>";
-            echo "<td>" . $row['file_name'] . "</td>";
+            echo "<td class='files-column'><b>Akta sorszáma</b></td>";
+            echo "<td class='files-column'>" . $row['file_name'] . "</td>";
         echo "</tr>";
 
         echo "<tr class='files-row'>";
-            echo "<td><b>Megnevezés</b></td>";
-            echo "<td>" . $row['title'] . "</td>";
+            echo "<td class='files-column'><b>Megnevezés</b></td>";
+            echo "<td class='files-column'>" . $row['title'] . "</td>";
         echo "</tr>";
 
         echo "<tr class='files-row'>";
-            echo "<td><b>Szerző</b></td>";
-            echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . RPName($row['playername']) . "</a></td>";
+            echo "<td class='files-column'><b>Szerző</b></td>";
+            echo "<td class='files-column'><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . RPName($row['playername']) . "</a></td>";
         echo "</tr>";
 
         echo "<tr class='files-row'>";
-            echo "<td><b>Kelt</b></td>";
-            echo "<td>" . $row['timestamp'] . "</td>";
+            echo "<td class='files-column'><b>Kelt</b></td>";
+            echo "<td class='files-column'>" . $row['timestamp'] . "</td>";
         echo "</tr>";
 
         echo "<tr class='files-row'>";
-            echo "<td colspan='2'><b>Akta tartalma</b></td>";
+            echo "<td colspan='2' class='files-column'><b>Akta tartalma</b></td>";
         echo "</tr>";
 
         echo "<tr class='files-row'>";
-            echo "<td colspan='2'><br />" . $row['text'] . "<br /><br /></td>";
+            echo "<td colspan='2' class='files-column'><br />" . $row['text'] . "<br /><br /></td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
