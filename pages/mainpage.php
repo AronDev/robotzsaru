@@ -21,7 +21,7 @@
                     include("pages/includes/startpage.php");
                     break;
                 } case 'files': {
-                    switch($t) {
+                    switch($type) {
                         case 'view': {
                             include("pages/includes/file_view.php");
                             break;
