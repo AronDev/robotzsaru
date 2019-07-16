@@ -6,7 +6,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     echo "<a class='button-danger' style='float:right;'>Törlés</a>";
     echo "<a class='button-norm' style='float:right;'>Módosítás</a>";
     echo "</span>";
-    echo "<br />";
+    echo "<br /><br />";
     echo "<table id='files'>";
         echo "<tr>";
             echo "<td><b>Akta sorszáma</b></td>";
