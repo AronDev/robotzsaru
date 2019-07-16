@@ -19,7 +19,7 @@
         </td>
     </tr>
     <tr>
-        <td colspan='2'><a class='button-primary submit-new-file'>Létrehozás</a></td>
+        <td colspan='2'><a class='button-primary submit-new-file'>Létrehozás</a><span id='newfileInfo'>&nbsp</span></td>
     </tr>
 </table>
 </div>
