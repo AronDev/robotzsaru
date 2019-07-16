@@ -1,15 +1,14 @@
 #files {
     width: 80%;
-}
-
-#files>.row {
-    padding: 5px;
-    margin-bottom: 5px;
     background-color: $darkC3;
-    cursor: pointer;
+    padding: 5px;
     -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
     box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
+}
+
+#files>td {
+    cursor: pointer;
     transition: 200ms all;
     &:hover {
 
