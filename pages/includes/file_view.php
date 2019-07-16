@@ -30,11 +30,11 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
         echo "</tr>";
 
         echo "<tr>";
-            echo "<td colspan='2'><b>Akta tartalma</b></td>";
+            echo "<td colspan='2' style='text-align:center;'><b>Akta tartalma</b></td>";
         echo "</tr>";
 
         echo "<tr>";
-            echo "<td colspan='2'><br />" . $row['text'] . "<br /><br /></td>";
+            echo "<td colspan='2'>" . $row['text'] . "</td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
