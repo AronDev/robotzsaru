@@ -2,14 +2,14 @@
     width: 80%;
     background-color: $darkC3;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 20px;
     -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
     box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
 }
 
 #files, .files-row, .files-header {
-    border: 1px solid $darkC1;
+    border: 1px solid $darkC2;
 }
 
 #files>td {
