@@ -4,7 +4,7 @@ if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM mi
     echo "<div id='fileview_content'>";
     echo "<h1>Jegyzőkönyvek » " . $row['dbid'] . "</h1>";
     echo "<div style='display: inline;'>";
-    echo "<a class='button-danger' style='float:right;'>Törlés</a>";
+    echo "<a class='button-danger rem-minute' style='float:right;'>Törlés</a>";
     echo "<a href='index.php?p=minutes&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
     echo "</div>";
     echo "<br /><br />";
