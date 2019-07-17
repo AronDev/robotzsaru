@@ -33,6 +33,13 @@ function getUserRankName($badgeNum) {
     return $row['name'];
 }
 
+function getUserRankPerm($badgeNum) {
+    require("connect.inc.php");
+    $result = mysqli_query($mysql_id, "SELECT perm FROM ranks WHERE dbid=(SELECT rank FROM users WHERE badge_number='" . $badgeNum . "')");
+    $row = mysqli_fetch_assoc($result);
+    return $row['perm'];
+}
+
 function RPName($name) {
     return str_replace("_", " ", $name);
 }
