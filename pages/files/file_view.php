@@ -4,7 +4,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     echo "<div id='fileview_content'>";
     echo "<h1>Akták » " . $row['file_name'] . "</h1>";
     echo "<div style='display: inline;'>";
-    echo "<a class='button-danger' style='float:right;'>Törlés</a>";
+    echo "<a class='button-danger rem-file' style='float:right;' name='" . $row['file_name'] . "' id='$id'>Törlés</a>";
     echo "<a href='index.php?p=files&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
     echo "</div>";
     echo "<br /><br />";

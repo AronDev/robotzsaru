@@ -42,7 +42,7 @@
                 $result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author ORDER BY timestamp DESC");
                 if(mysqli_num_rows($result) > 0) {
                     while($row = mysqli_fetch_assoc($result)) {
-                        echo "<tr class='files-row'>";
+                        echo "<tr class='files-row' id='fv-tr" . $row['dbid'] . "'>";
                             echo "<td class='files-column'>" . $row['file_name'] . "</td>";
                             echo "<td class='files-column'>" . $row['timestamp'] . "</td>";
                             echo "<td class='files-column'>" . $row['playername'] . "</td>";
