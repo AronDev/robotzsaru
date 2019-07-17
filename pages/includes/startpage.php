@@ -10,4 +10,16 @@
         <div class='other'>
         </div>
     </div>
+
+    <div onclick="window.location.href = 'index.php?p=minutes';" class="startpage-widget">
+        <div class='title'>
+            Kegyzőkönyvek
+            <i class="fas fa-pen icon"></i>
+            <div class='description'>
+                Kihallgatási, helyszínelési jegyzőkönyvek
+            </div>
+        </div>
+        <div class='other'>
+        </div>
+    </div>
 </div>
