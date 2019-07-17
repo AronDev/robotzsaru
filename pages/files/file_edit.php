@@ -27,7 +27,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
                     CKEDITOR.replace('editor1');
                     CKEDITOR.config.width = '100%';
                     var editor1 = CKEDITOR.instances['editor1'];
-                    editor1.setData(`" . $row['text'] . "`);
+                    editor1.setData(`" . trim($row['text']) . "`);
                     </script>";
                 echo "</td>";
             echo "</tr>";
