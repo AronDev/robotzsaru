@@ -18,20 +18,20 @@
             $id = isset($_GET['id']) ? $_GET['id'] : '';
             switch($page) {
                 case 'mainpage': {
-                    include("pages/includes/startpage.php");
+                    include("pages/startpage.php");
                     break;
                 } case 'files': {
                     switch($type) {
                         case 'view': {
-                            include("pages/includes/file_view.php");
+                            include("pages/files/file_view.php");
                             break;
                         } case 'new': {
-                            include("pages/includes/file_new.php");
+                            include("pages/files/file_new.php");
                             break;
-                        }default: include("pages/includes/files.php");
+                        }default: include("pages/files/files.php");
                     }
                     break;
-                } default: include("pages/includes/startpage.php");
+                } default: include("pages/startpage.php");
             }
             ?>
         </div>
