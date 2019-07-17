@@ -8,7 +8,7 @@ $text = mysqli_real_escape_string($mysql_id, $_POST["text"]);
 $id = $_POST['id'];
 
 if($result = mysqli_query($mysql_id, "UPDATE files SET file_name='$filename', title='$title', text='$text' WHERE dbid='$id'")) {
-    echo "reload";
+    echo "Sikeres szerkesztés!";
 } else echo "Hiba történt!";
 
 // POST adatok törlése
