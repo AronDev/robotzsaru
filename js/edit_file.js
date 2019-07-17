@@ -11,7 +11,7 @@ $('body').on('click', '.submit-edit-file', function(e) {
                 $.ajax({
                     type: 'POST',
                     url: 'includes/edit_file.inc.php',
-                    data: { filename : filename, title : title, text : text },
+                    data: { filename : filename, title : title, text : text, id : id },
                     success: function (response) {
                         window.location.href = 'index.php?p=files&t=view&id=' + id;
                     },
