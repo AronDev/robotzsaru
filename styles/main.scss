@@ -6,7 +6,7 @@
 
 body {
     color: $default-font-color;
-    font-size: $default-font-size;
+    font-size: $default-font-size !important;
     font-family: 'Montserrat', sans-serif;
     background-color: $background-color;
     -webkit-font-smoothing: antialiased;
