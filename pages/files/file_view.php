@@ -40,4 +40,3 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     echo "</div>";
 } else echo "<h1>Hiba történt!</h1>";
 ?>
-<script src='js/file_view.js'></script>
