@@ -17,7 +17,7 @@
         ";
     }
 
-    else if(getUserRankPerm($_SESSION['badge_number']) >= 2) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 2) {
         echo "
             <div onclick='window.location.href = `index.php?p=files`;' class='startpage-widget'>
                 <div class='title'>
