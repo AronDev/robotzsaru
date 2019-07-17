@@ -3,10 +3,12 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
     $row = mysqli_fetch_assoc($result);
     echo "<div id='fileview_content'>";
     echo "<h1>Akták » " . $row['file_name'] . "</h1>";
-    echo "<div style='display: inline;'>";
-    echo "<a class='button-danger rem-file' style='float:right;' name='" . $row['file_name'] . "' id='$id'>Törlés</a>";
-    echo "<a href='index.php?p=files&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
-    echo "</div>";
+    if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
+        echo "<div style='display: inline;'>";
+        echo "<a class='button-danger rem-file' style='float:right;' name='" . $row['file_name'] . "' id='$id'>Törlés</a>";
+        echo "<a href='index.php?p=files&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
+        echo "</div>";
+    }
     echo "<br /><br />";
     echo "<table id='fileview_table'>";
         echo "<tr>";
@@ -34,7 +36,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
         echo "</tr>";
 
         echo "<tr>";
-            echo "<td colspan='2' style='word-wrap: break-word;'>" . $row['text'] . "</td>";
+            echo "<td colspan='2'>" . $row['text'] . "</td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
