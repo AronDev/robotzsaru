@@ -45,7 +45,7 @@ $('body').on('click', '.rem-file', function(e) {
     e.preventDefault();
     var id = $(this).attr('id');
     var fName = $(this).attr('name');
-    $('#fv-tr' + dbid).css('background-color','rgba(255,0,0,0.1)');
+    $('#fv-tr' + id).css('background-color','rgba(255,0,0,0.1)');
     swal({
         title: 'Törlés',
         type: 'warning',
@@ -56,9 +56,9 @@ $('body').on('click', '.rem-file', function(e) {
         confirmButtonText: 'Törlés',
         cancelButtonText: 'Mégse',
     }).then((result) => {
-        $('#fv-tr' + dbid).css('background-color','rgba(0,0,0,0)');
+        $('#fv-tr' + id).css('background-color','rgba(0,0,0,0)');
         if (result.value) {
-            $('#fv-tr' + dbid).remove();
+            $('#fv-tr' + id).remove();
             $.ajax({
                 type: 'POST',
                 url: 'includes/rem_file.inc.php',
