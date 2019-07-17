@@ -31,6 +31,17 @@
                         }default: include("pages/files/files.php");
                     }
                     break;
+                } case 'minutes': {
+                    switch($type) {
+                        case 'view': {
+                            include("pages/minutes/minutes_view.php");
+                            break;
+                        } case 'new': {
+                            include("pages/minutes/minutes_new.php");
+                            break;
+                        }default: include("pages/minutes/minutes.php");
+                    }
+                    break;
                 } default: include("pages/startpage.php");
             }
             ?>
