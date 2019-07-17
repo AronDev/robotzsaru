@@ -13,7 +13,7 @@
 
     <div onclick="window.location.href = 'index.php?p=minutes';" class="startpage-widget">
         <div class='title'>
-            Kegyzőkönyvek
+            Jegyzőkönyvek
             <i class="fas fa-pen icon"></i>
             <div class='description'>
                 Kihallgatási, helyszínelési jegyzőkönyvek
