@@ -12,6 +12,7 @@
     border: 1px solid rgba(0,0,0,0);
     width: 15%;
     margin-right: 10px;
+    word-wrap: break-word;
     cursor: pointer;
     font-size: $default-font-size + 6;
     -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
@@ -32,6 +33,7 @@
 .startpage-widget>.icon {
     margin-top: 5px;
     margin-right: 5px;
+    margin-left: 5px;
     font-size: $default-font-size + 20;
     float: right;
 }
