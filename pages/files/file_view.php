@@ -34,7 +34,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
         echo "</tr>";
 
         echo "<tr>";
-            echo "<td colspan='2'>" . $row['text'] . "</td>";
+            echo "<td colspan='2' style='word-wrap: break-word;'>" . $row['text'] . "</td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
