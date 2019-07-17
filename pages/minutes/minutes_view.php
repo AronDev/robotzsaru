@@ -2,7 +2,7 @@
 if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM minutes INNER JOIN users ON users.badge_number=minutes.author WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='fileview_content'>";
-    echo "<h1>Akták » " . $row['file_name'] . "</h1>";
+    echo "<h1>Jegyzőkönyvek » " . $row['dbid'] . "</h1>";
     echo "<div style='display: inline;'>";
     echo "<a class='button-danger' style='float:right;'>Törlés</a>";
     echo "<a href='index.php?p=minutes&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
@@ -25,7 +25,11 @@ if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM mi
         echo "</tr>";
 
         echo "<tr>";
-            echo "<td colspan='2' style='text-align:center;'><b>Akta tartalma</b></td>";
+            echo "<td colspan='2' style='text-align:center;'><b>Jegyzőkönyv tartalma</b></td>";
+        echo "</tr>";
+
+        echo "<tr>";
+            echo "<td colspan='2'>" . $row['text'] . "</td>";
         echo "</tr>";
     echo "</table>";
     echo "</div>";
