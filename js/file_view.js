@@ -30,4 +30,5 @@ $('body').on('click', '.rem-file', function(e) {
                     });
                 }
             });
+    });
 });
