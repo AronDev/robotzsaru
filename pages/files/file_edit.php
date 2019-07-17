@@ -3,7 +3,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
     if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
         $row = mysqli_fetch_assoc($result);
         echo "<div id='fileview_content'>";
-        echo "<h1>Akták » " . $row['file_name'] . "</h1>";
+        echo "<h1>Akták » " . $row['file_name'] . " » Szerkesztés</h1>";
         echo "<br /><br />";
         echo "<table id='fileview_table'>";
             echo "<tr>";
