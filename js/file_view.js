@@ -1,4 +1,4 @@
-$('body').on('click', '.rem file', function(e) {
+$('body').on('click', '.rem-file', function(e) {
     e.preventDefault();
     var id = $(this).attr('id');
     var fName = $(this).attr('name');
