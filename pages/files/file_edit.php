@@ -33,7 +33,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
             echo "</tr>";
             echo "<tr>";
                 echo "<td colspan='2'>";
-                    echo "<td colspan='2'><a class='button-primary submit-edit-file' id='$id'>Módosítás</a><span id='editfileInfo' style='margin-left: 10px;'>&nbsp</span></td>";
+                    echo "<a class='button-primary submit-edit-file' id='$id'>Módosítás</a><span id='editfileInfo' style='margin-left: 10px;'>&nbsp</span>";
                 echo "</td>";
             echo "</tr>";
         echo "</table>";
