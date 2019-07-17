@@ -8,12 +8,12 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
         echo "<table id='fileview_table'>";
             echo "<tr>";
                 echo "<td><b>Akta sorszáma</b></td>";
-                echo "<td><input type='text' value='" . $row['file_name'] . "'></td>";
+                echo "<td><input type='text' id='inputFileName' value='" . $row['file_name'] . "'></td>";
             echo "</tr>";
 
             echo "<tr>";
                 echo "<td><b>Megnevezés</b></td>";
-                echo "<td><input type='text' value='" . $row['title'] . "'></td>";
+                echo "<td><input type='text' id='inputTitle' value='" . $row['title'] . "'></td>";
             echo "</tr>";
 
             echo "<tr>";
@@ -31,9 +31,14 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
                     </script>";
                 echo "</td>";
             echo "</tr>";
+            echo "<tr>";
+                echo "<td colspan='2'>";
+                    echo "<td colspan='2'><a class='button-primary submit-edit-file' id='$id'>Módosítás</a><span id='editfileInfo' style='margin-left: 10px;'>&nbsp</span></td>";
+                echo "</td>";
+            echo "</tr>";
         echo "</table>";
         echo "</div>";
     } else echo "<h1>Hiba történt!</h1>";
 } else echo "<h1>Nana!</h1>";
 ?>
-<script src='js/file_edit.js'></script>
+<script src='js/edit_file.js'></script>
