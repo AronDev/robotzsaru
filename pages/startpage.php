@@ -11,8 +11,6 @@
                         Kihallgatási, helyszínelési jegyzőkönyvek
                     </div>
                 </div>
-                <div class='other'>
-                </div>
             </div>
         ";
     }
@@ -26,8 +24,6 @@
                     <div class='description'>
                         Nyomozati akták
                     </div>
-                </div>
-                <div class='other'>
                 </div>
             </div>
         ";
