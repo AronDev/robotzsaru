@@ -1,7 +1,7 @@
 <div id="startpage-widgets">
     <?php
 
-    if(getUserRankPerm($_SESSION['badge_number']) <= 1) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 1) {
         echo "
             <div onclick='window.location.href = `index.php?p=minutes`;' class='startpage-widget'>
                 <div class='title'>
