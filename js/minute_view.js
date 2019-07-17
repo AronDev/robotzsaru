@@ -5,7 +5,7 @@ $('body').on('click', '.rem-minute', function(e) {
     swal({
         title: 'Törlés',
         type: 'warning',
-        html: `Biztos ki akarod törölni az aktát?<br /><br /><div style='color:#7a7a7a;font-size:14px;'>Jegyzet sorszáma: <b>${id}</b></div>`,
+        html: `Biztos ki akarod törölni az jegyzetet?<br /><br /><div style='color:#7a7a7a;font-size:14px;'>Jegyzet sorszáma: <b>${id}</b></div>`,
         showCancelButton: true,
         confirmButtonColor: '#d33',
         cancelButtonColor: '#3085d6',

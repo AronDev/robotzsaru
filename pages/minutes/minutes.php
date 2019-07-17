@@ -56,5 +56,6 @@
                 ?>
             </table>
         </div>
+        <script src='js/minute_view.js'></script>
     </body>
 </html>
