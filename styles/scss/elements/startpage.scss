@@ -8,10 +8,12 @@
     min-height: 10%;
     vertical-align:top;
     border-radius: 4px;
+    padding: 10px;
     border: 1px solid rgba(0,0,0,0);
     width: 15%;
     margin-right: 10px;
     cursor: pointer;
+    font-size: $default-font-size + 6;
     -webkit-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
     box-shadow: 0px 15px 35px -10px rgba(0,0,0,0.2);
@@ -27,20 +29,14 @@
     }
 }
 
-.startpage-widget>.title {
-    font-size: $default-font-size + 6;
-    background-color: $darkC3;
-    padding: 10px;
-}
-
-.startpage-widget>.title>.icon {
+.startpage-widget>.icon {
     margin-top: 5px;
     margin-right: 5px;
     font-size: $default-font-size + 20;
     float: right;
 }
 
-.startpage-widget>.title>.description {
+.startpage-widget>.description {
     margin-top: 5px;
     font-size: $default-font-size - 2;
     color: $whiteC3;
