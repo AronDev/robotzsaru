@@ -54,5 +54,6 @@
                 ?>
             </table>
         </div>
+        <script src='js/file_view.js'></script>
     </body>
 </html>
