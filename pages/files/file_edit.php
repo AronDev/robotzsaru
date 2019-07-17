@@ -24,7 +24,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
                 echo "<td colspan='2'>";
                     echo "<textarea name='editor1' id='editor1' rows='10' cols='80'></textarea><br />
                     <script>CKEDITOR.replace('editor1');CKEDITOR.config.width = '100%';
-                    var editor1 = CKEDITOR.instances['editor1'];
+                    var editor1 = CKEDITOR.instances.['editor1'];
                     editor1.setData('" . $row['text'] . "');
                     </script>";
                 echo "</td>";
