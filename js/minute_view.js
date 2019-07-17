@@ -1,7 +1,7 @@
 $('body').on('click', '.rem-minute', function(e) {
     e.preventDefault();
     var id = $(this).attr('id');
-    $('#fv-tr' + id).css('background-color','rgba(255,0,0,0.1)');
+    $('#min-tr' + id).css('background-color','rgba(255,0,0,0.1) !important');
     swal({
         title: 'Törlés',
         type: 'warning',
@@ -12,9 +12,9 @@ $('body').on('click', '.rem-minute', function(e) {
         confirmButtonText: 'Törlés',
         cancelButtonText: 'Mégse',
     }).then((result) => {
-        $('#fv-tr' + id).css('background-color','rgba(0,0,0,0)');
+        $('#min-tr' + id).css('background-color','rgba(0,0,0,0) !important');
         if (result.value) {
-            $('#fv-tr' + id).remove();
+            $('#min-tr' + id).remove();
             $.ajax({
                 type: 'POST',
                 url: 'includes/rem_minute.inc.php',
