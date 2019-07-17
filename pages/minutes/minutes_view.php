@@ -35,3 +35,4 @@ if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM mi
     echo "</div>";
 } else echo "<h1>Hiba történt!</h1>";
 ?>
+<script src='js/minute_view.js'></script>
