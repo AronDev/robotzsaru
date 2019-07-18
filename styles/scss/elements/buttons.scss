@@ -48,7 +48,7 @@
     background: linear-gradient(#202020, #181818);
     border: 1px solid #383838 !important;
     border-radius: 3.5px;
-    color: #0366d6;
+    color: $blue-color;
     cursor: pointer;
     font-weight: 600;
     padding-bottom: 6px;
@@ -60,8 +60,8 @@
     display:inline-block;
     margin-left: 5px;
     &:hover {
-        background: #0366d6 !important;
-        border-color: #0366d6 !important;
+        background: $blue-color !important;
+        border-color: $blue-color !important;
         color: $whiteC2;
     }
     &:active {
