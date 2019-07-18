@@ -48,7 +48,7 @@
                             echo "<td class='files-column'>" . $row['playername'] . "</td>";
                             echo "<td class='files-column'>" . $row['title'] . "</td>";
                             if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
-                                echo "<td class='files-column'><a href='index.php?p=files&t=view&id=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a><a class='rem-file' name='" . $row['file_name'] . "'><i class='fas fa-trash-alt icon'></i></a><a href='index.php?p=files&t=edit&id=" . $row['dbid'] . "' name='" . $row['file_name'] . "'><i class='fas fa-edit icon'></i></a></td>";
+                                echo "<td class='files-column'><a href='index.php?p=files&t=view&id=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a><a href='index.php?p=files&t=edit&id=" . $row['dbid'] . "' name='" . $row['file_name'] . "'><i class='fas fa-edit icon'></i></a><a class='rem-file' name='" . $row['file_name'] . "'><i class='fas fa-trash-alt icon'></i></a></td>";
                             }
                         echo "</tr>";
                     }

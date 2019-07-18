@@ -48,7 +48,7 @@
                             echo "<td class='files-column'>" . $row['playername'] . "</td>";
                             echo "<td class='files-column'>" . $row['title'] . "</td>";
                             if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
-                                echo "<td class='files-column'><a href='index.php?p=minutes&t=view&id=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a><a class='rem-minute' id='" . $row['dbid'] . "'><i class='fas fa-trash-alt icon'></i></a></td>";
+                                echo "<td class='files-column'><a href='index.php?p=minutes&t=view&id=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a><a href='index.php?p=minutes&t=edit&id=" . $row['dbid'] . "' name='" . $row['title'] . "'><i class='fas fa-edit icon'></i></a><a class='rem-minute' id='" . $row['dbid'] . "'><i class='fas fa-trash-alt icon'></i></a></td>";
                             }
                         echo "</tr>";
                     }
