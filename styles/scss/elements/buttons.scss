@@ -45,10 +45,10 @@
     }
 }
 .button-norm {
-    background: linear-gradient(#4f8cc9, #4f80c9);
-    border: 1px solid #006d88;
+    background: linear-gradient(#202020, #181818);
+    border: 1px solid #383838 !important;
     border-radius: 3.5px;
-    color: $whiteC2;
+    color: #0366d6;
     cursor: pointer;
     font-weight: 600;
     padding-bottom: 6px;
@@ -60,7 +60,8 @@
     display:inline-block;
     margin-left: 5px;
     &:hover {
-        background: linear-gradient(#4f6bc9, #3f6aab) !important;
+        background: #0366d6 !important;
+        color: $whiteC2;
     }
     &:active {
         box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
