@@ -1,3 +1,3 @@
 <?php
-$WEBPAGE_NAME = "NNI DB";
+$WEBPAGE_NAME = "Robotzsaru";
 ?>
