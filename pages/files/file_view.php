@@ -1,5 +1,5 @@
 <?php
-if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE dbid='$id'")) {
+if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername as p1, users.playername as p2 FROM files INNER JOIN users ON users.badge_number=files.author INNER JOIN users ON users.badge_number=files.edited_by WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='fileview_content'>";
     echo "<h1>Akták » " . $row['file_name'] . "</h1>";
@@ -23,7 +23,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
 
         echo "<tr>";
             echo "<td><b>Szerző</b></td>";
-            echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . RPName($row['playername']) . "</a></td>";
+            echo "<td><a href='index.php?p=users&t=view&id=" . $row['author'] . "'>" . RPName($row['p1']) . "</a></td>";
         echo "</tr>";
 
         echo "<tr>";
@@ -33,7 +33,7 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
 
         echo "<tr>";
             echo "<td><b>Utoljára szerkesztve</b></td>";
-            echo "<td>" . $row['edited'] . "</td>";
+            echo "<td>" . RPName($row['p2']) . " - " . $row['edited'] . "</td>";
         echo "</tr>";
 
         echo "<tr>";
