@@ -9,7 +9,7 @@ $('body').on('click', '.submit-edit-minute', function(e) {
                 $.ajax({
                     type: 'POST',
                     url: 'includes/edit_minute.inc.php',
-                    data: { filename : filename, title : title, text : text, id : id },
+                    data: { title : title, text : text, id : id },
                     success: function (response) {
                         window.location.href = 'index.php?p=minutes&t=view&id=' + id;
                     },
