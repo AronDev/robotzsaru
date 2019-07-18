@@ -28,7 +28,7 @@
                         } case 'new': {
                             include("pages/files/file_new.php");
                             break;
-                        }case 'edit': {
+                        } case 'edit': {
                             include("pages/files/file_edit.php");
                             break;
                         } default: include("pages/files/files.php");
@@ -42,7 +42,10 @@
                         } case 'new': {
                             include("pages/minutes/minutes_new.php");
                             break;
-                        }default: include("pages/minutes/minutes.php");
+                        } case 'edit': {
+                            include("pages/minutes/minute_edit.php");
+                            break;
+                        } default: include("pages/minutes/minutes.php");
                     }
                     break;
                 } default: include("pages/startpage.php");
