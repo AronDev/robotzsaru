@@ -1,5 +1,5 @@
 <?php
-if($result = mysqli_query($mysql_id, "SELECT files.*, u1.playername as p1, u2.playername as p2 FROM files INNER JOIN users as u1 ON u1.badge_number=files.author INNER JOIN users as u2 ON u2.badge_number=files.edited_by WHERE dbid='$id'")) {
+if($result = mysqli_query($mysql_id, "SELECT files.*, u1.playername as p1, u2.playername as p2 FROM files as f INNER JOIN users as u1 ON u1.badge_number=f.author INNER JOIN users as u2 ON u2.badge_number=f.edited_by WHERE dbid='$id'")) {
     $row = mysqli_fetch_assoc($result);
     echo "<div id='fileview_content'>";
     echo "<h1>Akták » " . $row['file_name'] . "</h1>";
