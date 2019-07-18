@@ -32,6 +32,11 @@ if($result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM file
         echo "</tr>";
 
         echo "<tr>";
+            echo "<td><b>Utoljára szerkesztve</b></td>";
+            echo "<td>" . $row['edited'] . "</td>";
+        echo "</tr>";
+
+        echo "<tr>";
             echo "<td colspan='2' style='text-align:center;'><b>Akta tartalma</b></td>";
         echo "</tr>";
 
