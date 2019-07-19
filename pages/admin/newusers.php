@@ -18,7 +18,7 @@
                     while($row = mysqli_fetch_assoc($result)) {
                         echo "<tr class='files-row' id='u-tr" . $row['badge_number'] . "'>";
                             echo "<td class='files-column'>" . $row['badge_number'] . "</td>";
-                            echo "<td class='files-column'>" . $row['playername'] . "</td>";
+                            echo "<td class='files-column'>" . RPName($row['playername']) . "</td>";
                             echo "<td class='files-column'>" . $row['registered'] . "</td>";
                             echo "<td class='files-column'>";
                                 echo "<a class='accept-user icon-button-confirm' id='" . $row['badge_number'] . "'><i class='fas fa-check'></i></a>";
