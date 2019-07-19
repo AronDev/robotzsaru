@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title><?php echo $WEBPAGE_NAME; ?> - Akták</title>
+        <title><?php echo $WEBPAGE_NAME; ?> - Archivált akták</title>
 
         <script>
 		function search_fileName() {
@@ -40,7 +40,7 @@
                         <th class='files-header'>Megnevezés</th>
                         <th class='files-header'>Művelet</th>
                     </tr>";
-                    $result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author ORDER BY timestamp DESC");
+                    $result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE files.public='1' ORDER BY timestamp DESC");
                     if(mysqli_num_rows($result) > 0) {
                         while($row = mysqli_fetch_assoc($result)) {
                             echo "<tr class='files-row' id='fv-tr" . $row['dbid'] . "'>";
