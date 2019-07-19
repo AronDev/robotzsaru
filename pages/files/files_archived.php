@@ -27,7 +27,7 @@
     </head>
     <body>
         <?php
-        if(getUserRankPerm($_SESSION['badge_number']) >= 2) {
+        if(getUserRankPerm($_SESSION['badge_number']) >= 0) {
             echo "
             <div id='files-content'>
                 <h1>Archivált akták</h1><br />
