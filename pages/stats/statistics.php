@@ -3,7 +3,7 @@
         <title><?php echo $WEBPAGE_NAME; ?> - Statisztikák</title>
     </head>
     <body>
-        <div id="files-content" style='width: 20% !important;'>
+        <div id="files-content" style='width: 30% !important;'>
             <h1>Statisztika</h1><br />
             <h3>Akta heti toplista</h3>
             <table id="files">
