@@ -13,7 +13,7 @@
                     <th class='files-header'>Művelet</th>
                 </tr>
                 <?php
-                $result = mysqli_query($mysql_id, "SELECT badge_number, playername, registered as pcs FROM users WHERE active='0' ORDER BY timestamp DESC");
+                $result = mysqli_query($mysql_id, "SELECT badge_number, playername, registered FROM users WHERE active='0' ORDER BY registered DESC");
                 if(mysqli_num_rows($result) > 0) {
                     while($row = mysqli_fetch_assoc($result)) {
                         echo "<tr class='files-row' id='u-tr" . $row['badge_number'] . "'>";
