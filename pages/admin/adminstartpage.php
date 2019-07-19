@@ -6,7 +6,7 @@
         $row = mysqli_fetch_assoc($result);
         echo "
             <div onclick='window.location.href = `index.php?p=admin&t=newusers`;' class='startpage-widget'>
-                Elfogadásra váró felhasználók
+                Elfogadásra vár
                 <i class='far fa-clock icon'></i>
                 <div class='description'>
                     Elfogadásra váró felhasználók: " . $row['pcs'] . "
@@ -21,7 +21,7 @@
                 Felhasználólista
                 <i class='far fa-user icon'></i>
                 <div class='description'>
-                    Elfogadott felhasználók megtekintése és kezelése
+                    Felhasználók megtekintése és kezelése
                 </div>
             </div>
         ";
