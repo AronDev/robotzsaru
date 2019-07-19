@@ -4,7 +4,7 @@ require("connect.inc.php");
 
 $id = $_POST['id'];
 
-if($result = mysqli_query($mysql_id, "UPDATE users SET activate='1' WHERE dbid='$id'")) {
+if($result = mysqli_query($mysql_id, "UPDATE users SET activate='1' WHERE badge_number='$id'")) {
 } else echo "Hiba történt!";
 
 // POST adatok törlése
