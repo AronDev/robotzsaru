@@ -34,6 +34,9 @@
                         } case 'edit': {
                             include("pages/files/file_edit.php");
                             break;
+                        } case 'archived': {
+                            include("pages/files/files_archived.php");
+                            break;
                         } default: include("pages/files/files.php");
                     }
                     break;
