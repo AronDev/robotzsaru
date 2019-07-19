@@ -27,7 +27,7 @@
     if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
         echo "
             <div onclick='window.location.href = `index.php?p=stats`;' class='startpage-widget'>
-                Akták
+                Statisztika
                 <i class='fas fa-info-circle icon'></i>
                 <div class='description'>
                     Robotzsaru statisztika
