@@ -4,9 +4,7 @@
     </head>
     <body>
         <div id="files-content">
-            <h1>Akták</h1><br />
-            <input class='search' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Keresés sorszám alapján' style='width: 20%'>
-            <a class='button-primary' href='index.php?p=files&t=new' style='float:right;'>Új akta</a><br /><br />
+            <h1>Elfogadásra váró felhasználók</h1><br />
             <table id="files">
                 <tr>
                     <th class='files-header'>Jelvényszám</th>
@@ -28,7 +26,7 @@
                             echo "</td>";
                         echo "</tr>";
                     }
-                } else echo "<tr><td colspan='4'>Nincsenek elfogadásra váró felhasználók</td></tr>";
+                } else echo "<tr><td colspan='4' style='text-align:center;'>Nincsenek elfogadásra váró felhasználók</td></tr>";
                 ?>
                 <tr>
                     <th class='files-header'>Jelvényszám</th>
