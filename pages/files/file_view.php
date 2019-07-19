@@ -6,7 +6,9 @@ if($result = mysqli_query($mysql_id, "SELECT f.*, u1.playername as p1 FROM files
     if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
         echo "<div style='display: inline;'>";
         echo "<a class='button-danger rem-file' style='float:right;' name='" . $row['file_name'] . "' id='$id'>Törlés</a>";
-        echo "<a href='index.php?p=files&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
+        if($row['archive'] == 0) {
+                echo "<a href='index.php?p=files&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
+        }
         echo "</div>";
     }
     echo "<br /><br />";
