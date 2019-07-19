@@ -70,8 +70,25 @@
 }
 
 .icon-button-danger {
-    padding: 5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
     background-color: $red-color;
+    border-radius: 3px;
+    border: 1px solid $red-color;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.icon-button-confirm {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: $green-color;
+    border-radius: 3px;
+    border: 1px solid $green-color;
     cursor: pointer;
     margin-right: 5px;
 }
