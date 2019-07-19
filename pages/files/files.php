@@ -55,8 +55,15 @@
                             echo "</td>";
                         echo "</tr>";
                     }
-                } else echo "<tr><td colspan='4'>Nincsenek akták!</td></tr>";
+                } else echo "<tr><td colspan='5'>Nincsenek akták!</td></tr>";
                 ?>
+                <tr>
+                    <th class='files-header'>Sorszám</th>
+                    <th class='files-header'>Kelt</th>
+                    <th class='files-header'>Szerző</th>
+                    <th class='files-header'>Megnevezés</th>
+                    <th class='files-header'>Művelet</th>
+                </tr>
             </table>
         </div>
         <script src='js/file_view.js'></script>

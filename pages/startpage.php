@@ -37,7 +37,7 @@
         ";
     }
 
-    if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
         echo "
             <div onclick='window.location.href = `index.php?p=admin`;' class='startpage-widget'>
                 Adminisztráció

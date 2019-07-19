@@ -37,6 +37,17 @@
                         } default: include("pages/files/files.php");
                     }
                     break;
+                } case 'admin': {
+                    switch($type) {
+                        case 'users': {
+                            include("pages/admin/users.php");
+                            break;
+                        } case 'newusers': {
+                            include("pages/admin/newusers.php");
+                            break;
+                        } default: include("pages/admin/adminstartpage.php");
+                    }
+                    break;
                 } case 'minutes': {
                     switch($type) {
                         case 'view': {

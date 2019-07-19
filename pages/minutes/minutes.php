@@ -57,6 +57,13 @@
                     }
                 } else echo "<tr><td colspan='4'>Nincsenek jegyzőkönyvek!</td></tr>";
                 ?>
+                <tr>
+                    <th class='files-header'>Sorszám</th>
+                    <th class='files-header'>Kelt</th>
+                    <th class='files-header'>Szerző</th>
+                    <th class='files-header'>Megnevezés</th>
+                    <th class='files-header'>Művelet</th>
+                </tr>
             </table>
         </div>
         <script src='js/minute_view.js'></script>

@@ -68,3 +68,10 @@
         box-shadow: 0 0 0 0.2em rgba(3,102,214,.3);
     }
 }
+
+.icon-button-danger {
+    padding: 5px;
+    background-color: $red-color;
+    cursor: pointer;
+    margin-right: 5px;
+}
