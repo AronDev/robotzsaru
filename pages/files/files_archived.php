@@ -51,7 +51,7 @@
                                 echo "<td class='files-column'>";
                                 echo "<a href='index.php?p=files&t=view&id=" . $row['dbid'] . "'><i class='far fa-eye icon'></i></a>";
                                 if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
-                                    echo "<a href='index.php?p=files&t=edit&id=" . $row['dbid'] . "'><i class='fas fa-edit icon'></i></a><a class='rem-file' name='" . $row['file_name'] . "'><i class='fas fa-trash-alt icon'></i></a>";
+                                    echo "<a class='rem-file' name='" . $row['file_name'] . "'><i class='fas fa-trash-alt icon'></i></a>";
                                 }
                                 echo "</td>";
                             echo "</tr>";
