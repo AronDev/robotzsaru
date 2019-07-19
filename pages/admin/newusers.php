@@ -36,6 +36,6 @@
                 </tr>
             </table>
         </div>
-        <script src='js/file_view.js'></script>
+        <script src='js/pendinguser.js'></script>
     </body>
 </html>
