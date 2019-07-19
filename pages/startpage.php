@@ -45,7 +45,8 @@
                 <div class='description'>
                     Robotzsaru adminisztráció<br />";
 
-        $waiting = myqsli_num_rows(mysqli_query($mysql_id, "SELECT COUNT(badge_number) FROM users WHERE active=0"));
+        $result = mysqli_query($mysql_id, "SELECT COUNT(badge_number) FROM users WHERE active=0");
+        $waiting = myqsli_num_rows($result);
         echo $waiting . "db felhasználó vár elbírálásra.";
         echo "
                 </div>
