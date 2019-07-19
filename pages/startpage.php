@@ -25,6 +25,18 @@
         ";
     }
 
+    if(getUserRankPerm($_SESSION['badge_number']) >= 0) {
+        echo "
+            <div onclick='window.location.href = `index.php?p=files&t=archived`;' class='startpage-widget'>
+                Archívált akták
+                <i class='fas fa-archive icon'></i>
+                <div class='description'>
+                    Archívált akták gyűjteménye
+                </div>
+            </div>
+        ";
+    }
+
     if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
         echo "
             <div onclick='window.location.href = `index.php?p=stats`;' class='startpage-widget'>
