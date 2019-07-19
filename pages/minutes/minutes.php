@@ -55,7 +55,7 @@
                             echo "</td>";
                         echo "</tr>";
                     }
-                } else echo "<tr><td colspan='4' style='text-align:center;'>Nincsenek jegyzőkönyvek!</td></tr>";
+                } else echo "<tr><td colspan='4' style='text-align:center;' class='files-column'>Nincsenek jegyzőkönyvek!</td></tr>";
                 ?>
                 <tr>
                     <th class='files-header'>Sorszám</th>

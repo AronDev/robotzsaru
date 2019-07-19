@@ -27,7 +27,7 @@
                                 echo "</td>";
                             echo "</tr>";
                         }
-                    } else echo "<tr><td colspan='4' style='text-align:center;'>Nincsenek elfogadásra váró felhasználók</td></tr>";
+                    } else echo "<tr><td colspan='4'  class='files-column' style='text-align:center;'>Nincsenek elfogadásra váró felhasználók</td></tr>";
                     echo "
                     <tr>
                         <th class='files-header'>Jelvényszám</th>
