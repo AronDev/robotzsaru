@@ -5,7 +5,7 @@
         $result = mysqli_query($mysql_id, "SELECT COUNT(badge_number) as pcs FROM users WHERE active=0");
         $row = mysqli_fetch_assoc($result);
         echo "
-            <div onclick='window.location.href = `index.php?p=admins&t=newusers`;' class='startpage-widget'>
+            <div onclick='window.location.href = `index.php?p=admin&t=newusers`;' class='startpage-widget'>
                 Jegyzőkönyvek
                 <i class='far fa-clock icon'></i>
                 <div class='description'>
@@ -17,7 +17,7 @@
 
     if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
         echo "
-            <div onclick='window.location.href = `index.php?p=admins&t=users`;' class='startpage-widget'>
+            <div onclick='window.location.href = `index.php?p=admin&t=users`;' class='startpage-widget'>
                 Jegyzőkönyvek
                 <i class='far fa-user icon'></i>
                 <div class='description'>
