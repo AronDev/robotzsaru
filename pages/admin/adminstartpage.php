@@ -17,7 +17,7 @@
 
     if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
         echo "
-            <div onclick='window.location.href = `index.php?p=admin&t=users`;' class='startpage-widget'>
+            <div onclick='window.location.href = `index.php?p=users&t=list`;' class='startpage-widget'>
                 Felhasználólista
                 <i class='far fa-user icon'></i>
                 <div class='description'>
