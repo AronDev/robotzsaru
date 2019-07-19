@@ -4,7 +4,7 @@
     </head>
     <body>
         <div id="files-content">
-            <h1>Elfogadásra váró felhasználók</h1><br />
+            <h1>Elbírálásra váró felhasználók</h1><br />
             <table id="files">
                 <tr>
                     <th class='files-header'>Jelvényszám</th>
