@@ -31,7 +31,7 @@
             echo "
             <div id='files-content'>
                 <h1>Archivált akták</h1><br />
-                <input class='search' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Keresés sorszám alapján' style='width: 20%'><br />
+                <input class='search' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Keresés sorszám alapján' style='width: 20%'><br /><br />
                 <table id='files'>
                     <tr>
                         <th class='files-header'>Sorszám</th>
