@@ -85,7 +85,7 @@
                 } else echo "<tr><td colspan='4'>Nincsenek akták!</td></tr>";
                 ?>
             </table>
-
+            <br />
             <h1>Jegyzőkönyv statisztika</h1><br />
 
             <h3>Jegyzőkönyv heti toplista</h3>
