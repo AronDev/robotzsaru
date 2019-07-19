@@ -45,9 +45,9 @@
                 <div class='description'>
                     Robotzsaru adminisztráció<br />";
 
-        $result = mysqli_query($mysql_id, "SELECT COUNT(badge_number) FROM users WHERE active=0");
-        $waiting = mysqli_num_rows($result);
-        echo $waiting . "db felhasználó vár elbírálásra.";
+        $result = mysqli_query($mysql_id, "SELECT COUNT(badge_number) as pcs FROM users WHERE active=0");
+        $row = mysqli_fetch_assoc($result);
+        echo $row['pcs'] . "db felhasználó vár elbírálásra.";
         echo "
                 </div>
             </div>
