@@ -24,6 +24,7 @@
             </div>
         ";
     }
+
     if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
         echo "
             <div onclick='window.location.href = `index.php?p=stats`;' class='startpage-widget'>
@@ -31,6 +32,22 @@
                 <i class='fas fa-info-circle icon'></i>
                 <div class='description'>
                     Robotzsaru statisztika
+                </div>
+            </div>
+        ";
+    }
+
+    if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
+        echo "
+            <div onclick='window.location.href = `index.php?p=admin`;' class='startpage-widget'>
+                Adminisztráció
+                <i class='fas fa-user-shield icon'></i>
+                <div class='description'>
+                    Robotzsaru adminisztráció<br />";
+
+        $waiting = myqsli_num_rows(mysqli_query($mysql_id, "SELECT COUNT(badge_number) FROM users WHERE active=0"));
+        echo $waiting . "db felhasználó vár elbírálásra.";
+        echo "
                 </div>
             </div>
         ";
