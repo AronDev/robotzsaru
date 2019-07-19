@@ -20,6 +20,9 @@
                 case 'mainpage': {
                     include("pages/startpage.php");
                     break;
+                } case 'stats': {
+                    include("pages/stats/statistics.php");
+                    break;
                 } case 'files': {
                     switch($type) {
                         case 'view': {

@@ -24,5 +24,16 @@
             </div>
         ";
     }
+    if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
+        echo "
+            <div onclick='window.location.href = `index.php?p=stats`;' class='startpage-widget'>
+                Akták
+                <i class='fas fa-info-circle icon'></i>
+                <div class='description'>
+                    Robotzsaru statisztika
+                </div>
+            </div>
+        ";
+    }
     ?>
 </div>
