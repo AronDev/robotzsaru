@@ -21,8 +21,8 @@
                             echo "<td class='files-column'>" . $row['playername'] . "</td>";
                             echo "<td class='files-column'>" . $row['registered'] . "</td>";
                             echo "<td class='files-column'>";
-                                echo "<a class='accept-user' id='" . $row['badge_number'] . "'><i class='fas fa-check'></i></a>";
-                                echo "<a class='decline-user' id='" . $row['badge_number'] . "'><i class='fas fa-ban'></i></a>";
+                                echo "<a class='accept-user icon-button-confirm' id='" . $row['badge_number'] . "'><i class='fas fa-check'></i></a>";
+                                echo "<a class='decline-user icon-button-danger' id='" . $row['badge_number'] . "'><i class='fas fa-ban'></i></a>";
                             echo "</td>";
                         echo "</tr>";
                     }
