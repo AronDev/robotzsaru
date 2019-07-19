@@ -28,10 +28,10 @@
     if(getUserRankPerm($_SESSION['badge_number']) >= 0) {
         echo "
             <div onclick='window.location.href = `index.php?p=files&t=archived`;' class='startpage-widget'>
-                Archívált akták
+                Archivált akták
                 <i class='fas fa-archive icon'></i>
                 <div class='description'>
-                    Archívált akták gyűjteménye
+                    Archivált akták gyűjteménye
                 </div>
             </div>
         ";
