@@ -17,7 +17,8 @@
                 SELECT f.author as author, u.playername as pn, COUNT(dbid) as pcs
                 FROM files AS f
                 INNER JOIN users AS u ON u.badge_number=f.author
-                WHERE f.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAY GROUP BY f.author
+                WHERE f.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAY
+                GROUP BY f.author
                 ORDER BY pcs DESC
                 ";
                 $result = mysqli_query($mysql_id, $query);
@@ -43,7 +44,8 @@
                 SELECT f.author as author, u.playername as pn, COUNT(dbid) as pcs
                 FROM files AS f
                 INNER JOIN users AS u ON u.badge_number=f.author
-                WHERE f.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 1 MONTH GROUP BY f.author
+                WHERE f.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 1 MONTH
+                GROUP BY f.author
                 ORDER BY pcs DESC
                 ";
                 $result = mysqli_query($mysql_id, $query);
@@ -69,6 +71,7 @@
                 SELECT f.author as author, u.playername as pn, COUNT(dbid) as pcs
                 FROM files AS f
                 INNER JOIN users AS u ON u.badge_number=f.author
+                GROUP BY f.author
                 ORDER BY pcs DESC
                 ";
                 $result = mysqli_query($mysql_id, $query);
