@@ -47,7 +47,7 @@
 
         $result = mysqli_query($mysql_id, "SELECT COUNT(badge_number) as pcs FROM users WHERE active=0");
         $row = mysqli_fetch_assoc($result);
-        echo $row['pcs'] . "db felhasználó vár elbírálásra.";
+        echo $row['pcs'] . " db felhasználó vár elbírálásra.";
         echo "
                 </div>
             </div>
