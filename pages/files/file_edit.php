@@ -39,6 +39,6 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
         echo "</table>";
         echo "</div>";
     } else echo "<h1>Hiba történt!</h1>";
-} else echo "<h1>Nana!</h1>";
+} else echo "<h1>Nem szerkeszthetsz akták amit nem te hoztál létre!</h1>";
 ?>
 <script src='js/edit_file.js'></script>
