@@ -24,7 +24,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
 
                 echo "<tr>";
                     echo "<td colspan='2'>";
-                        echo "<textarea name='editor1' id='editor1' rows='10' cols='80' onClick='CKEDITOR.instances.theInstance.setData( ``, function() { this.updateElement(); } )'></textarea><br />
+                        echo "<textarea name='editor1' id='editor1' rows='10' cols='80'></textarea><br />
                         <script>
                         CKEDITOR.replace('editor1');
                         CKEDITOR.config.width = '100%';
@@ -36,7 +36,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
                 echo "<tr>";
                     echo "<td colspan='2'>";
                         echo "<a class='button-primary submit-edit-file' id='$id'>Módosítás</a>";
-                        echo "<button class='button-norm' type='reset'>Visszaállítás</button>";
+                        echo "<a class='button-danger' href='index.php?p=files&t=view&id=$id'>Vissza</a>";
                         echo "<span id='editfileInfo' style='margin-left: 10px;'>&nbsp</span>";
                     echo "</td>";
                 echo "</tr>";
