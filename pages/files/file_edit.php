@@ -6,6 +6,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
             echo "<div id='fileview_content'>";
             echo "<h1>Akták » " . $row['file_name'] . " » Szerkesztés</h1>";
             echo "<br /><br />";
+            echo "<form action='' method=''>";
             echo "<table id='fileview_table'>";
                 echo "<tr>";
                     echo "<td><b>Akta sorszáma</b></td>";
@@ -40,6 +41,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
                     echo "</td>";
                 echo "</tr>";
             echo "</table>";
+            echo "</form>";
             echo "</div>";
         } else echo "<h1>Archivált aktát nem szerkeszthetsz!</h1>";
     } else echo "<h1>Hiba történt!</h1>";
