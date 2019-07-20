@@ -3,7 +3,7 @@ if($result = mysqli_query($mysql_id, "SELECT f.*, u1.playername as p1 FROM files
     $row = mysqli_fetch_assoc($result);
     echo "<div id='fileview_content'>";
     echo "<h1>Akták » " . $row['file_name'] . "</h1>";
-    if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 4 || $row['author'] == $_SESSION['badge_number']) {
         echo "<div style='display: inline;'>";
         echo "<a class='button-danger rem-file' style='float:right;' name='" . $row['file_name'] . "' id='$id'>Törlés</a>";
         if($row['archive'] == 0) {

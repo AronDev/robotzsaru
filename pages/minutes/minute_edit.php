@@ -1,5 +1,5 @@
 <?php
-if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
+if(getUserRankPerm($_SESSION['badge_number']) >= 4 || $row['author'] == $_SESSION['badge_number']) {
     if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM minutes INNER JOIN users ON users.badge_number=minutes.author WHERE dbid='$id'")) {
         $row = mysqli_fetch_assoc($result);
         echo "<div id='fileview_content'>";

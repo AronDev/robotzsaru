@@ -3,7 +3,7 @@ if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM mi
     $row = mysqli_fetch_assoc($result);
     echo "<div id='fileview_content'>";
     echo "<h1>Jegyzőkönyvek » " . $row['dbid'] . "</h1>";
-    if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSION['badge_number']) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 4 || $row['author'] == $_SESSION['badge_number']) {
         echo "<div style='display: inline;'>";
         echo "<a class='button-danger rem-minute' style='float:right;' id='" . $row['dbid'] . "'>Törlés</a>";
         echo "<a href='index.php?p=minutes&t=edit&id=" . $id . "' class='button-norm' style='float:right;'>Módosítás</a>";
