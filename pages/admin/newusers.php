@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-        if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
+        if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
             echo "<div id='files-content'>
                 <h1>Elbírálásra váró felhasználók</h1><br />
                 <table id='files'>

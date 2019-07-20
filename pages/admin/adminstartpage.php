@@ -1,7 +1,7 @@
 <div id="startpage-widgets">
     <?php
 
-    if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
         $result = mysqli_query($mysql_id, "SELECT COUNT(badge_number) as pcs FROM users WHERE active=0");
         $row = mysqli_fetch_assoc($result);
         echo "
@@ -15,7 +15,7 @@
         ";
     }
 
-    if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
+    if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
         echo "
             <div onclick='window.location.href = `index.php?p=users&t=list`;' class='startpage-widget'>
                 Felhasználólista (készülőben)
