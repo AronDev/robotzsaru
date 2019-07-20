@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-        if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
+        if(getUserRankPerm($_SESSION['badge_number']) >= 3) {
             echo "
             <div id='files-content' style='width: 30% !important;'>
             <h1>Akta statisztika</h1><br />
