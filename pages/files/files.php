@@ -31,7 +31,7 @@
             echo "
             <div id='files-content'>
                 <h1>Akták</h1><br />
-                <input class='search' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Keresés sorszám alapján' style='width: 20%'>
+                <input class='search input-primary' type='text' id='f_search' onkeyup='search_fileName()' placeholder='Keresés sorszám alapján' style='width: 20%'>
                 <a class='button-primary' href='index.php?p=files&t=new' style='float:right;'>Új akta</a><br /><br />
                 <table id='files'>
                     <tr>

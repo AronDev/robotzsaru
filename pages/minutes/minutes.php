@@ -31,7 +31,7 @@
             echo "
             <div id='files-content'>
                 <h1>Jegyzőkönyvek</h1><br />
-                <input class='search' type='text' id='m_search' onkeyup='search_minuteId()' placeholder='Keresés sorszám alapján' style='width: 20%'>
+                <input class='search input-primary' type='text' id='m_search' onkeyup='search_minuteId()' placeholder='Keresés sorszám alapján' style='width: 20%'>
                 <a class='button-primary' href='index.php?p=minutes&t=new' style='float:right;'>Új jegyzet</a><br /><br />
                 <table id='files'>
                     <tr>
