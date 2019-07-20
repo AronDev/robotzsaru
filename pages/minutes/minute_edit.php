@@ -12,7 +12,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
             echo "</tr>";
 
             echo "<tr>";
-                echo "<td colspan='2' style='text-align:center;'><b>Jegyzet tartalma</b></td>";
+                echo "<td colspan='2' style='text-align:center;'><b>Jegyzőkönyv tartalma</b></td>";
             echo "</tr>";
 
             echo "<tr>";
@@ -36,6 +36,6 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
         echo "</table>";
         echo "</div>";
     } else echo "<h1>Hiba történt!</h1>";
-} else echo "<h1>Nem szerkeszthetsz jegyzetet amit nem te hoztál létre!</h1>";
+} else echo "<h1>Nem szerkeszthetsz jegyzőkönyvet amit nem te hoztál létre!</h1>";
 ?>
 <script src='js/edit_minute.js'></script>
