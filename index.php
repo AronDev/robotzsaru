@@ -17,7 +17,7 @@
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-        <script src="https://cdn.ckeditor.com/4.11.4/full/ckeditor.js"></script>
+        <script src="js/ckeditor/ckeditor.js"></script>
 
         <meta charset="utf-8">
 
