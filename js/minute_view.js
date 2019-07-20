@@ -1,7 +1,7 @@
 $('body').on('click', '.rem-minute', function(e) {
     e.preventDefault();
     var id = $(this).attr('id');
-    $('#min-tr' + id).css('background:','rgba(255,0,0,0.1)');
+    $('#min-tr' + id).css('background-color','rgba(255,0,0,0.1)');
     swal({
         title: 'Törlés',
         type: 'warning',
@@ -12,7 +12,7 @@ $('body').on('click', '.rem-minute', function(e) {
         confirmButtonText: 'Törlés',
         cancelButtonText: 'Mégse',
     }).then((result) => {
-        $('#min-tr' + id).css('background:','rgba(0,0,0,0)');
+        $('#min-tr' + id).css('background-color','rgba(0,0,0,0)');
         if (result.value) {
             $('#min-tr' + id).remove();
             $.ajax({
