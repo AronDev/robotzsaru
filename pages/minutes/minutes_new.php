@@ -3,7 +3,7 @@
 <table id='fileview_table'>
     <tr>
         <td><b>Megnevezés</b></td>
-        <td><input type='text' id='inputTitle'></td>
+        <td><input type='text' id='inputTitle' class='input-primary'></td>
     </tr>
     <tr>
         <td colspan='2' style='text-align:center;'><b>Tartalom</b></td>
