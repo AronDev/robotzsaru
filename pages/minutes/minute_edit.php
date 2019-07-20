@@ -8,7 +8,7 @@ if(getUserRankPerm($_SESSION['badge_number']) >= 3 || $row['author'] == $_SESSIO
         echo "<table id='fileview_table'>";
             echo "<tr>";
                 echo "<td><b>Megnevezés</b></td>";
-                echo "<td><input type='text' id='inputTitle' value='" . $row['title'] . "'></td>";
+                echo "<td><input type='text' id='inputTitle' class='input-primary' value='" . $row['title'] . "'></td>";
             echo "</tr>";
 
             echo "<tr>";
