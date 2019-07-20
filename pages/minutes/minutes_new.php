@@ -1,5 +1,5 @@
 <div id='fileview_content'>
-<h1>Új jegyzet</h1><br />
+<h1>Új jegyzőkönyv</h1><br />
 <table id='fileview_table'>
     <tr>
         <td><b>Megnevezés</b></td>
