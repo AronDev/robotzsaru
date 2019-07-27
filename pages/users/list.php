@@ -28,8 +28,11 @@
     <body>
         <?php
         if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
+            $result = mysqli_query($mysql_id, "SELECT COUNT(u.badge_number) as userCount, u.badge_number, u.playername, r.name FROM users AS u INNER JOIN ranks AS r ON r.dbid=u.rank WHERE active='1' ORDER BY playername ASC");
+            $row = mysqli_fetch_assoc($result);
             echo "<div id='files-content'>
                 <h1>Felhasználók</h1><br />
+                <div class='text'>Összesen " . $row['userCount'] . "</div>
                 <input class='search input-primary' type='text' id='badgeNum_search' onkeyup='search_badgeNum()' placeholder='Keresés jelvényszám alapján' style='width: 20%'>
                 <a class='button-primary' href='index.php?p=users&t=new' style='float:right;'>Új felhasználó</a><br /><br />
                 <table id='files'>
@@ -39,7 +42,6 @@
                         <th class='files-header'>Rang</th>
                         <th class='files-header'>Művelet</th>
                     </tr>";
-                    $result = mysqli_query($mysql_id, "SELECT u.badge_number, u.playername, r.name FROM users AS u INNER JOIN ranks AS r ON r.dbid=u.rank WHERE active='1' ORDER BY playername ASC");
                     if(mysqli_num_rows($result) > 0) {
                         while($row = mysqli_fetch_assoc($result)) {
                             echo "<tr class='files-row' id='u-tr" . $row['badge_number'] . "'>";
