@@ -23,6 +23,14 @@
                 } case 'stats': {
                     include("pages/stats/statistics.php");
                     break;
+                } case 'users': {
+                    switch($type) {
+                        case 'list': {
+                            include("pages/users/list.php");
+                            break;
+                        } default: include("pages/users/startpage.php");
+                    }
+                    break;
                 } case 'files': {
                     switch($type) {
                         case 'view': {
