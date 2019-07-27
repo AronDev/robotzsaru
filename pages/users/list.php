@@ -22,7 +22,7 @@
                                 echo "<td class='files-column'>" . RPName($row['playername']) . "</td>";
                                 echo "<td class='files-column'>" . $row['name'] . "</td>";
                                 echo "<td class='files-column'>";
-                                    COMING
+                                    echo "coming";
                                 echo "</td>";
                             echo "</tr>";
                         }

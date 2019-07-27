@@ -18,7 +18,7 @@
     if(getUserRankPerm($_SESSION['badge_number']) >= 4) {
         echo "
             <div onclick='window.location.href = `index.php?p=users&t=list`;' class='startpage-widget'>
-                Felhasználólista (készülőben)
+                Felhasználólista
                 <i class='far fa-user icon'></i>
                 <div class='description'>
                     Felhasználók megtekintése és kezelése
