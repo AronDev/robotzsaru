@@ -32,6 +32,7 @@
                         <th class='files-header'>Jelvényszám</th>
                         <th class='files-header'>Név</th>
                         <th class='files-header'>Rang</th>
+                        <th class='files-header'>Művelet</th>
                     </tr>
                 </table>
             </div>";
