@@ -31,8 +31,8 @@
             $result = mysqli_query($mysql_id, "SELECT COUNT(u.badge_number) as userCount, u.badge_number, u.playername, r.name FROM users AS u INNER JOIN ranks AS r ON r.dbid=u.rank WHERE active='1' ORDER BY playername ASC");
             $row = mysqli_fetch_assoc($result);
             echo "<div id='files-content'>
-                <h1>Felhasználók</h1><br />
-                <div class='text'>Összesen " . $row['userCount'] . "</div>
+                <h1>Felhasználók</h1>
+                <div class='text'>Összesen " . $row['userCount'] . "</div><br />
                 <input class='search input-primary' type='text' id='badgeNum_search' onkeyup='search_badgeNum()' placeholder='Keresés jelvényszám alapján' style='width: 20%'>
                 <a class='button-primary' href='index.php?p=users&t=new' style='float:right;'>Új felhasználó</a><br /><br />
                 <table id='files'>
