@@ -31,7 +31,7 @@
             echo "<div id='files-content'>
                 <h1>Felhasználók</h1><br />
                 <input class='search input-primary' type='text' id='badgeNum_search' onkeyup='search_badgeNum()' placeholder='Keresés jelvényszám alapján' style='width: 20%'>
-                <a class='button-primary' href='index.php?p=users&t=new' style='float:right;'><i class='fas fa-user-plus' style='margin-right: 5px;'></i>Új felhasználó</a><br /><br />
+                <a class='button-primary' href='index.php?p=users&t=new' style='float:right;'>Új felhasználó</a><br /><br />
                 <table id='files'>
                     <tr>
                         <th class='files-header'>Jelvényszám</th>
