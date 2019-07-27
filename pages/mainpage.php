@@ -28,6 +28,15 @@
                         case 'list': {
                             include("pages/users/list.php");
                             break;
+                        } case 'view': {
+                            include("pages/users/view.php");
+                            break;
+                        } case 'new': {
+                            include("pages/users/new.php");
+                            break;
+                        } case 'edit': {
+                            include("pages/users/edit.php");
+                            break;
                         } default: include("pages/users/startpage.php");
                     }
                     break;
