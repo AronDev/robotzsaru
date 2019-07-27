@@ -48,7 +48,8 @@
                                 echo "<td class='files-column'>" . RPName($row['playername']) . "</td>";
                                 echo "<td class='files-column'>" . $row['name'] . "</td>";
                                 echo "<td class='files-column'>";
-                                    echo "coming";
+                                    echo "<a href='index.php?p=users&t=view&id=" . $row['badge_number'] . "'><i class='far fa-eye icon'></i></a>";
+                                    echo "<a href='index.php?p=users&t=edit&id=" . $row['badge_number'] . "'><i class='fas fa-edit icon'></i></a>";
                                 echo "</td>";
                             echo "</tr>";
                         }
