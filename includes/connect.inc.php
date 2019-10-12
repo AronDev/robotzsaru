@@ -1,9 +1,11 @@
 <?php
 /*
+<?php
 define("HOSTNAME","host");
 define("USERNAME","user");
 define("PASSWORD","pw");
 define("DATABASE","db");
+?>
 */
 include("credentials.inc.php");
 $mysql_id = mysqli_connect(HOSTNAME, USERNAME, PASSWORD, DATABASE);
