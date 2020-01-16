@@ -12,14 +12,8 @@ $('body').on('click', '#loginButton', function(e) {
                 url: 'includes/login.inc.php',
                 data: { badgeNum : badgeNum, password : password },
                 success: function(data) {
-                    console.log(data);
-                    if(data == "") {
-                        console.log("success");
-                        location.reload();
-                    } else {
-                        console.log("error");
-                        loginInfo.html(data);
-                    }
+                    location.reload();
+                    //loginInfo.html(data);
                 },
                 error: function (data) {
                     console.log(data);
