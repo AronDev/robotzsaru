@@ -12,7 +12,7 @@ $('body').on('click', '#loginButton', function(e) {
                 url: 'includes/login.inc.php',
                 data: { badgeNum : badgeNum, password : password },
                 success: function(response) {
-                    if(response == "reload")
+                    if(response.success == true){
                         location.reload();
                     else
                         loginInfo.html(response);
