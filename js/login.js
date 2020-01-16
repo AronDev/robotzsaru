@@ -13,7 +13,7 @@ $('body').on('click', '#loginButton', function(e) {
                 data: { badgeNum : badgeNum, password : password },
                 success: function(data) {
                     console.log(data);
-                    if(data == "Sikeresen bejelentkeztél!") {
+                    if(data == "") {
                         console.log("success");
                         location.reload();
                     } else {
