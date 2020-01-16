@@ -11,14 +11,15 @@ $('body').on('click', '#loginButton', function(e) {
                 type: 'POST',
                 url: 'includes/login.inc.php',
                 data: { badgeNum : badgeNum, password : password },
-                success: function(response) {
-                    if(response.success == true){
+                success: function(data) {
+                    if(data.success == true) {
                         location.reload();
-                    else
-                        loginInfo.html(response);
+                    } else {
+                        loginInfo.html(data);
+                    }
                 },
-                error: function (response) {
-                    console.log(response);
+                error: function (data) {
+                    console.log(data);
                 }
             });
         } else loginInfo.html('Hiányos jelszó!');
