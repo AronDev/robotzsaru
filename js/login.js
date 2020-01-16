@@ -12,9 +12,12 @@ $('body').on('click', '#loginButton', function(e) {
                 url: 'includes/login.inc.php',
                 data: { badgeNum : badgeNum, password : password },
                 success: function(data) {
+                    console.log(data);
                     if(data == "Sikeresen bejelentkeztél!") {
+                        console.log("success");
                         location.reload();
                     } else {
+                        console.log("error");
                         loginInfo.html(data);
                     }
                 },
