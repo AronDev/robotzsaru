@@ -16,7 +16,7 @@ if($result = mysqli_query($mysql_id, "SELECT * FROM users WHERE (BINARY badge_nu
             $_SESSION['logged'] = true;
             $_SESSION['badge_number'] = $badgeNum;
             
-            echo "Sikeresen bejelentkeztél!";
+            echo "";
         } else {
             echo "A felhasználó nincs aktiválva!";
         }
