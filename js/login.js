@@ -11,12 +11,12 @@ $('body').on('click', '#loginButton', function(e) {
                 type: 'POST',
                 url: 'includes/login.inc.php',
                 data: { badgeNum : badgeNum, password : password },
-                success: function(data) {
+                success: function(response) {
                     location.reload();
                     //loginInfo.html(data);
                 },
-                error: function (data) {
-                    console.log(data);
+                error: function(response) {
+                    console.log(response);
                 }
             });
         } else loginInfo.html('Hiányos jelszó!');
