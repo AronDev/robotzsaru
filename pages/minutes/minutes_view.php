@@ -23,7 +23,7 @@ if($result = mysqli_query($mysql_id, "SELECT minutes.*, users.playername FROM mi
 
         echo "<tr>";
             echo "<td><b>Kelt</b></td>";
-            echo "<td>" . $row['timestamp'] . "</td>";
+            echo "<td>" . $row['created'] . "</td>";
         echo "</tr>";
 
         echo "<tr>";

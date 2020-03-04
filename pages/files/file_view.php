@@ -30,7 +30,7 @@ if($result = mysqli_query($mysql_id, "SELECT f.*, u1.playername as p1 FROM files
 
         echo "<tr>";
             echo "<td><b>Kelt</b></td>";
-            echo "<td>" . $row['timestamp'] . "</td>";
+            echo "<td>" . $row['created'] . "</td>";
         echo "</tr>";
 
         echo "<tr>";

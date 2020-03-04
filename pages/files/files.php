@@ -41,12 +41,12 @@
                         <th class='files-header'>Megnevezés</th>
                         <th class='files-header'>Művelet</th>
                     </tr>";
-                    $result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE files.archive='0' ORDER BY timestamp DESC");
+                    $result = mysqli_query($mysql_id, "SELECT files.*, users.playername FROM files INNER JOIN users ON users.badge_number=files.author WHERE files.archive='0' ORDER BY created DESC");
                     if(mysqli_num_rows($result) > 0) {
                         while($row = mysqli_fetch_assoc($result)) {
                             echo "<tr class='files-row' id='fv-tr" . $row['dbid'] . "'>";
                                 echo "<td class='files-column'>" . $row['file_name'] . "</td>";
-                                echo "<td class='files-column'>" . $row['timestamp'] . "</td>";
+                                echo "<td class='files-column'>" . $row['created'] . "</td>";
                                 echo "<td class='files-column'>" . $row['playername'] . "</td>";
                                 echo "<td class='files-column'>" . $row['title'] . "</td>";
                                 echo "<td class='files-column'>";
