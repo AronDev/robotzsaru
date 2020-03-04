@@ -1,7 +1,7 @@
 -- --------------------------------------------------------
--- Host:                         87.229.115.109
--- Server version:               5.5.64-MariaDB - MariaDB Server
--- Server OS:                    Linux
+-- Host:                         titok
+-- Server version:               10.1.44-MariaDB-0ubuntu0.18.04.1 - Ubuntu 18.04
+-- Server OS:                    debian-linux-gnu
 -- HeidiSQL Version:             10.2.0.5599
 -- --------------------------------------------------------
 
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `files` (
   `archive` int(11) DEFAULT '0',
   `edited_by` int(11) DEFAULT '0',
   `edited` timestamp NULL DEFAULT NULL,
-  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`dbid`),
   UNIQUE KEY `file_name` (`file_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COMMENT='Nyomozati akták';
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `minutes` (
   `text` text CHARACTER SET utf8 COLLATE utf8_hungarian_ci NOT NULL,
   `edited_by` int(11) DEFAULT '0',
   `edited` timestamp NULL DEFAULT NULL,
-  `timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`dbid`),
   UNIQUE KEY `title` (`title`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='Jegyzőkönyvek';
