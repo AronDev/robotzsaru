@@ -18,7 +18,7 @@
             SELECT f.author as author, u.playername as pn, COUNT(dbid) as pcs
             FROM files AS f
             INNER JOIN users AS u ON u.badge_number=f.author
-            WHERE f.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAY
+            WHERE f.created >= CURRENT_TIMESTAMP() - INTERVAL 7 DAY
             GROUP BY f.author
             ORDER BY pcs DESC
             ";
@@ -44,7 +44,7 @@
             SELECT f.author as author, u.playername as pn, COUNT(dbid) as pcs
             FROM files AS f
             INNER JOIN users AS u ON u.badge_number=f.author
-            WHERE f.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 1 MONTH
+            WHERE f.created >= CURRENT_TIMESTAMP() - INTERVAL 1 MONTH
             GROUP BY f.author
             ORDER BY pcs DESC
             ";
@@ -96,7 +96,7 @@
             SELECT m.author as author, u.playername as pn, COUNT(dbid) as pcs
             FROM minutes AS m
             INNER JOIN users AS u ON u.badge_number=m.author
-            WHERE m.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 7 DAY
+            WHERE m.created >= CURRENT_TIMESTAMP() - INTERVAL 7 DAY
             GROUP BY m.author
             ORDER BY pcs DESC
             ";
@@ -121,7 +121,7 @@
             SELECT m.author as author, u.playername as pn, COUNT(dbid) as pcs
             FROM minutes AS m
             INNER JOIN users AS u ON u.badge_number=m.author
-            WHERE m.timestamp >= CURRENT_TIMESTAMP() - INTERVAL 1 MONTH
+            WHERE m.created >= CURRENT_TIMESTAMP() - INTERVAL 1 MONTH
             GROUP BY m.author
             ORDER BY pcs DESC
             ";
